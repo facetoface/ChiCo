@@ -31,6 +31,7 @@
 		5EEC1FED1ED181D80035EE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE51ED181D80035EE07 /* ViewController.m */; };
 		5EEC1FEE1ED181D80035EE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE51ED181D80035EE07 /* ViewController.m */; };
 		70D3164EFF1C3D664C63E46E /* libPods-ChiCoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 904C806346D85D9FBB583594 /* libPods-ChiCoUITests.a */; };
+		80633B01783C1CB2AC68A236 /* libPods-ChiCoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2B1454D1149655A6DB88C5 /* libPods-ChiCoTests.a */; };
 		EE9EEFD5CF1463E63BA33120 /* libPods-ChiCo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E55B0DE933459F801E61795 /* libPods-ChiCo.a */; };
 /* End PBXBuildFile section */
 
@@ -73,9 +74,12 @@
 		5EEC1FE31ED181D80035EE07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5EEC1FE41ED181D80035EE07 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5EEC1FE51ED181D80035EE07 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6F0AB990355690211232F7DB /* Pods-ChiCoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCoTests/Pods-ChiCoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87F83AD332B127260E490E89 /* Pods-ChiCoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCoUITests/Pods-ChiCoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		904C806346D85D9FBB583594 /* libPods-ChiCoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChiCoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E55B0DE933459F801E61795 /* libPods-ChiCo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChiCo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2B1454D1149655A6DB88C5 /* libPods-ChiCoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChiCoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D962AF701B39531BA820FBC3 /* Pods-ChiCoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCoTests/Pods-ChiCoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80633B01783C1CB2AC68A236 /* libPods-ChiCoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,8 @@
 				5CBF2F9390285003A827993F /* Pods-ChiCo.release.xcconfig */,
 				87F83AD332B127260E490E89 /* Pods-ChiCoUITests.debug.xcconfig */,
 				5C493B76859D15E436041AB5 /* Pods-ChiCoUITests.release.xcconfig */,
+				6F0AB990355690211232F7DB /* Pods-ChiCoTests.debug.xcconfig */,
+				D962AF701B39531BA820FBC3 /* Pods-ChiCoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -149,6 +156,9 @@
 		5E6799F71ECFEF7C00844946 /* ChiCo */ = {
 			isa = PBXGroup;
 			children = (
+				5E6FF57B1ED9BF32007331F6 /* QKLibray */,
+				5E6FF57A1ED9BF27007331F6 /* Controller */,
+				5E6FF5791ED9BF21007331F6 /* Word */,
 				5EEC1FE01ED181D80035EE07 /* Start */,
 				5EEC1FCD1ED181C20035EE07 /* Reasource */,
 				5E6799F81ECFEF7C00844946 /* Supporting Files */,
@@ -182,9 +192,94 @@
 			path = ChiCoUITests;
 			sourceTree = "<group>";
 		};
+		5E6FF5781ED9B993007331F6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		5E6FF5791ED9BF21007331F6 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		5E6FF57A1ED9BF27007331F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E6FF5811ED9C01F007331F6 /* Base */,
+				5E6FF5821ED9C01F007331F6 /* Test */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E6FF57B1ED9BF32007331F6 /* QKLibray */ = {
+			isa = PBXGroup;
+			children = (
+				5E6FF5801ED9BFF6007331F6 /* Net */,
+				5E6FF57C1ED9BFC8007331F6 /* Data */,
+				5E6FF57D1ED9BFC8007331F6 /* Image */,
+				5E6FF57E1ED9BFC8007331F6 /* UI */,
+				5E6FF57F1ED9BFC8007331F6 /* Vido */,
+			);
+			path = QKLibray;
+			sourceTree = "<group>";
+		};
+		5E6FF57C1ED9BFC8007331F6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5E6FF57D1ED9BFC8007331F6 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		5E6FF57E1ED9BFC8007331F6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5E6FF57F1ED9BFC8007331F6 /* Vido */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vido;
+			sourceTree = "<group>";
+		};
+		5E6FF5801ED9BFF6007331F6 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		5E6FF5811ED9C01F007331F6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5E6FF5821ED9C01F007331F6 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		5EEC1FCD1ED181C20035EE07 /* Reasource */ = {
 			isa = PBXGroup;
 			children = (
+				5E6FF5781ED9B993007331F6 /* JSON */,
 				23FC8C391ED2E6C10001AF64 /* Constants */,
 				5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */,
 				5EEC1FCF1ED181C20035EE07 /* LaunchScreen.storyboard */,
@@ -211,6 +306,7 @@
 			children = (
 				9E55B0DE933459F801E61795 /* libPods-ChiCo.a */,
 				904C806346D85D9FBB583594 /* libPods-ChiCoUITests.a */,
+				AB2B1454D1149655A6DB88C5 /* libPods-ChiCoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -242,9 +338,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E679A251ECFEF7C00844946 /* Build configuration list for PBXNativeTarget "ChiCoTests" */;
 			buildPhases = (
+				B18E909FF322D516B3DD1C5D /* Check Pods Manifest.lock */,
 				5E679A0A1ECFEF7C00844946 /* Sources */,
 				5E679A0B1ECFEF7C00844946 /* Frameworks */,
 				5E679A0C1ECFEF7C00844946 /* Resources */,
+				89707898B9D3CC2D50A9CD02 /* Embed Pods Frameworks */,
+				991CEC8E6D6AE9D24CB1FF91 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -403,6 +502,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChiCoUITests/Pods-ChiCoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		89707898B9D3CC2D50A9CD02 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChiCoTests/Pods-ChiCoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8B7EB875C85100400AC87A73 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +530,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChiCo/Pods-ChiCo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991CEC8E6D6AE9D24CB1FF91 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChiCoTests/Pods-ChiCoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B18E909FF322D516B3DD1C5D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F323C15120DF34F81B5C99FE /* Embed Pods Frameworks */ = {
@@ -629,6 +773,7 @@
 		};
 		5E679A261ECFEF7C00844946 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0AB990355690211232F7DB /* Pods-ChiCoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ChiCoTests/Info.plist;
@@ -641,6 +786,7 @@
 		};
 		5E679A271ECFEF7C00844946 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D962AF701B39531BA820FBC3 /* Pods-ChiCoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ChiCoTests/Info.plist;

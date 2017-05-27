@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D54E087AE71E925CB9B87D19'
+               BlueprintIdentifier = '8A296544A9D4467F4515197D'
                BlueprintName = 'MMPickerView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMMPickerView.a'>

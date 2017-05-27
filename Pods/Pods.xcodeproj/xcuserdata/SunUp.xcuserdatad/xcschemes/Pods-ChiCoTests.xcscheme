@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DD2CB92D738B7AC815A0296F'
-               BlueprintName = 'TTTAttributedLabel'
+               BlueprintIdentifier = 'F630EAC8662A49FDE2431CE5'
+               BlueprintName = 'Pods-ChiCoTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libTTTAttributedLabel.a'>
+               BuildableName = 'libPods-ChiCoTests.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
