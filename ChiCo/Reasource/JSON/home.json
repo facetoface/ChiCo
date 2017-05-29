@@ -1,0 +1,54 @@
+[
+  {
+  "identifer" : "QKAlbumController",
+  "title" : "相册",
+  "push_param" : {},
+  "push_type" : "2"
+  },
+  {
+  "identifer" : "QKWriteDaiaryController",
+  "title" : "旅行日记",
+  "push_param" : {},
+  "push_type" : "2"
+  },
+  {
+  "identifer" : "QKPhotoPickerController",
+  "title" : "选择照片",
+  "push_param" : {},
+  "push_type" : "3"
+ },
+ {
+ "identifer" : "QKEasyAlbumController",
+ "title" : "选择照片",
+ "push_param" : {},
+ "push_type" : "3"
+ },
+ {
+ "identifer" : "QKEasyClipsAlbumController",
+ "title" : "照片裁剪",
+ "push_param" : {},
+ "push_type" : "3"
+ }
+ ,
+ {
+ "identifer" : "QKDashLineController",
+ "title" : "虚线",
+ "push_param" : {},
+ "push_type" : "1"
+ },
+ {
+ "identifer" : "PredicateController",
+ "title" : "查找和筛选",
+ "push_param" : {},
+ "push_type" : "1"
+ }
+ ,
+ {
+ "identifer" : "QKDragImageController",
+ "title" : "图片拖拽",
+ "push_param" : {},
+ "push_type" : "1"
+ }
+ 
+ 
+]

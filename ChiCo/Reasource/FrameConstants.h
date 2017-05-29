@@ -15,5 +15,8 @@
 //屏幕高度
 #define SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
 
+//1像素
+#define ONEPIX (CGFloat)(1.0 / [UIScreen mainScreen].scale)
+#define QK_PADDING 10
 
 #endif /* FrameConstants_h */

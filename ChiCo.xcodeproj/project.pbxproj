@@ -9,15 +9,26 @@
 /* Begin PBXBuildFile section */
 		5E679A131ECFEF7C00844946 /* ChiCoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E679A121ECFEF7C00844946 /* ChiCoTests.m */; };
 		5E679A1E1ECFEF7C00844946 /* ChiCoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E679A1D1ECFEF7C00844946 /* ChiCoUITests.m */; };
+		5EAE010A1EDC1CEA000830A9 /* QKMainTableBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01091EDC1CEA000830A9 /* QKMainTableBarController.m */; };
+		5EAE01141EDC1D33000830A9 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE010D1EDC1D33000830A9 /* HomeController.m */; };
+		5EAE01151EDC1D33000830A9 /* QKHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE010F1EDC1D33000830A9 /* QKHomeModel.m */; };
+		5EAE01161EDC1D33000830A9 /* QKHomeNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01111EDC1D33000830A9 /* QKHomeNavBar.m */; };
+		5EAE01171EDC1D33000830A9 /* QKHomeTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01131EDC1D33000830A9 /* QKHomeTabView.m */; };
+		5EAE011B1EDC1D63000830A9 /* QKRecommandController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE011A1EDC1D63000830A9 /* QKRecommandController.m */; };
+		5EAE011F1EDC1D7A000830A9 /* QKMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE011E1EDC1D7A000830A9 /* QKMessageController.m */; };
+		5EAE01231EDC1D8F000830A9 /* QKMyCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01221EDC1D8F000830A9 /* QKMyCenterController.m */; };
+		5EAE01271EDC1DA6000830A9 /* QKTabFirstBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01261EDC1DA6000830A9 /* QKTabFirstBaseController.m */; };
+		5EAE012B1EDC1DC1000830A9 /* QKBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE012A1EDC1DC1000830A9 /* QKBaseNavController.m */; };
+		5EAE012F1EDC1E05000830A9 /* QKTableBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE012E1EDC1E05000830A9 /* QKTableBar.m */; };
+		5EAE01341EDC1E87000830A9 /* UIColor+QKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01331EDC1E87000830A9 /* UIColor+QKColor.m */; };
+		5EAE01381EDC1F4A000830A9 /* QKReasouce.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01371EDC1F4A000830A9 /* QKReasouce.m */; };
+		5EAE013B1EDC215D000830A9 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EAE013A1EDC215D000830A9 /* home.json */; };
 		5EEC1FD41ED181C20035EE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */; };
 		5EEC1FD51ED181C20035EE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */; };
 		5EEC1FD61ED181C20035EE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */; };
 		5EEC1FD71ED181C20035EE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCF1ED181C20035EE07 /* LaunchScreen.storyboard */; };
 		5EEC1FD81ED181C20035EE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCF1ED181C20035EE07 /* LaunchScreen.storyboard */; };
 		5EEC1FD91ED181C20035EE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCF1ED181C20035EE07 /* LaunchScreen.storyboard */; };
-		5EEC1FDA1ED181C20035EE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FD11ED181C20035EE07 /* Main.storyboard */; };
-		5EEC1FDB1ED181C20035EE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FD11ED181C20035EE07 /* Main.storyboard */; };
-		5EEC1FDC1ED181C20035EE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FD11ED181C20035EE07 /* Main.storyboard */; };
 		5EEC1FDD1ED181C20035EE07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FD31ED181C20035EE07 /* Info.plist */; };
 		5EEC1FDE1ED181C20035EE07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FD31ED181C20035EE07 /* Info.plist */; };
 		5EEC1FDF1ED181C20035EE07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FD31ED181C20035EE07 /* Info.plist */; };
@@ -27,9 +38,6 @@
 		5EEC1FE91ED181D80035EE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE31ED181D80035EE07 /* main.m */; };
 		5EEC1FEA1ED181D80035EE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE31ED181D80035EE07 /* main.m */; };
 		5EEC1FEB1ED181D80035EE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE31ED181D80035EE07 /* main.m */; };
-		5EEC1FEC1ED181D80035EE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE51ED181D80035EE07 /* ViewController.m */; };
-		5EEC1FED1ED181D80035EE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE51ED181D80035EE07 /* ViewController.m */; };
-		5EEC1FEE1ED181D80035EE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1FE51ED181D80035EE07 /* ViewController.m */; };
 		70D3164EFF1C3D664C63E46E /* libPods-ChiCoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 904C806346D85D9FBB583594 /* libPods-ChiCoUITests.a */; };
 		80633B01783C1CB2AC68A236 /* libPods-ChiCoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2B1454D1149655A6DB88C5 /* libPods-ChiCoTests.a */; };
 		EE9EEFD5CF1463E63BA33120 /* libPods-ChiCo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E55B0DE933459F801E61795 /* libPods-ChiCo.a */; };
@@ -64,16 +72,40 @@
 		5E679A191ECFEF7C00844946 /* ChiCoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChiCoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E679A1D1ECFEF7C00844946 /* ChiCoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChiCoUITests.m; sourceTree = "<group>"; };
 		5E679A1F1ECFEF7C00844946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EAE01081EDC1CEA000830A9 /* QKMainTableBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKMainTableBarController.h; sourceTree = "<group>"; };
+		5EAE01091EDC1CEA000830A9 /* QKMainTableBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKMainTableBarController.m; sourceTree = "<group>"; };
+		5EAE010C1EDC1D33000830A9 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		5EAE010D1EDC1D33000830A9 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		5EAE010E1EDC1D33000830A9 /* QKHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKHomeModel.h; sourceTree = "<group>"; };
+		5EAE010F1EDC1D33000830A9 /* QKHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKHomeModel.m; sourceTree = "<group>"; };
+		5EAE01101EDC1D33000830A9 /* QKHomeNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKHomeNavBar.h; sourceTree = "<group>"; };
+		5EAE01111EDC1D33000830A9 /* QKHomeNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKHomeNavBar.m; sourceTree = "<group>"; };
+		5EAE01121EDC1D33000830A9 /* QKHomeTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKHomeTabView.h; sourceTree = "<group>"; };
+		5EAE01131EDC1D33000830A9 /* QKHomeTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKHomeTabView.m; sourceTree = "<group>"; };
+		5EAE01191EDC1D63000830A9 /* QKRecommandController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKRecommandController.h; sourceTree = "<group>"; };
+		5EAE011A1EDC1D63000830A9 /* QKRecommandController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKRecommandController.m; sourceTree = "<group>"; };
+		5EAE011D1EDC1D7A000830A9 /* QKMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKMessageController.h; sourceTree = "<group>"; };
+		5EAE011E1EDC1D7A000830A9 /* QKMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKMessageController.m; sourceTree = "<group>"; };
+		5EAE01211EDC1D8F000830A9 /* QKMyCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKMyCenterController.h; sourceTree = "<group>"; };
+		5EAE01221EDC1D8F000830A9 /* QKMyCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKMyCenterController.m; sourceTree = "<group>"; };
+		5EAE01251EDC1DA6000830A9 /* QKTabFirstBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKTabFirstBaseController.h; sourceTree = "<group>"; };
+		5EAE01261EDC1DA6000830A9 /* QKTabFirstBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKTabFirstBaseController.m; sourceTree = "<group>"; };
+		5EAE01291EDC1DC1000830A9 /* QKBaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBaseNavController.h; sourceTree = "<group>"; };
+		5EAE012A1EDC1DC1000830A9 /* QKBaseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBaseNavController.m; sourceTree = "<group>"; };
+		5EAE012D1EDC1E05000830A9 /* QKTableBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKTableBar.h; sourceTree = "<group>"; };
+		5EAE012E1EDC1E05000830A9 /* QKTableBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKTableBar.m; sourceTree = "<group>"; };
+		5EAE01321EDC1E87000830A9 /* UIColor+QKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+QKColor.h"; sourceTree = "<group>"; };
+		5EAE01331EDC1E87000830A9 /* UIColor+QKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+QKColor.m"; sourceTree = "<group>"; };
+		5EAE01361EDC1F4A000830A9 /* QKReasouce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKReasouce.h; sourceTree = "<group>"; };
+		5EAE01371EDC1F4A000830A9 /* QKReasouce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKReasouce.m; sourceTree = "<group>"; };
+		5EAE013A1EDC215D000830A9 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		5EEC1FC21ED17FD50035EE07 /* ChiCo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChiCo.pch; sourceTree = "<group>"; };
 		5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EEC1FD01ED181C20035EE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5EEC1FD21ED181C20035EE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EEC1FD31ED181C20035EE07 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EEC1FE11ED181D80035EE07 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5EEC1FE21ED181D80035EE07 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5EEC1FE31ED181D80035EE07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5EEC1FE41ED181D80035EE07 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5EEC1FE51ED181D80035EE07 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6F0AB990355690211232F7DB /* Pods-ChiCoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCoTests/Pods-ChiCoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87F83AD332B127260E490E89 /* Pods-ChiCoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCoUITests/Pods-ChiCoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		904C806346D85D9FBB583594 /* libPods-ChiCoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChiCoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +227,7 @@
 		5E6FF5781ED9B993007331F6 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				5EAE013A1EDC215D000830A9 /* home.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -230,6 +263,7 @@
 		5E6FF57C1ED9BFC8007331F6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				5EAE01351EDC1F4A000830A9 /* EasyTest */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -244,6 +278,7 @@
 		5E6FF57E1ED9BFC8007331F6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5EAE01311EDC1E51000830A9 /* Color */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -276,6 +311,105 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		5EAE010B1EDC1D1C000830A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE010C1EDC1D33000830A9 /* HomeController.h */,
+				5EAE010D1EDC1D33000830A9 /* HomeController.m */,
+				5EAE010E1EDC1D33000830A9 /* QKHomeModel.h */,
+				5EAE010F1EDC1D33000830A9 /* QKHomeModel.m */,
+				5EAE01101EDC1D33000830A9 /* QKHomeNavBar.h */,
+				5EAE01111EDC1D33000830A9 /* QKHomeNavBar.m */,
+				5EAE01121EDC1D33000830A9 /* QKHomeTabView.h */,
+				5EAE01131EDC1D33000830A9 /* QKHomeTabView.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		5EAE01181EDC1D40000830A9 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE01191EDC1D63000830A9 /* QKRecommandController.h */,
+				5EAE011A1EDC1D63000830A9 /* QKRecommandController.m */,
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
+		5EAE011C1EDC1D71000830A9 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE011D1EDC1D7A000830A9 /* QKMessageController.h */,
+				5EAE011E1EDC1D7A000830A9 /* QKMessageController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		5EAE01201EDC1D87000830A9 /* MyCenter */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE01211EDC1D8F000830A9 /* QKMyCenterController.h */,
+				5EAE01221EDC1D8F000830A9 /* QKMyCenterController.m */,
+			);
+			name = MyCenter;
+			sourceTree = "<group>";
+		};
+		5EAE01241EDC1D9C000830A9 /* FirstBase */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE01251EDC1DA6000830A9 /* QKTabFirstBaseController.h */,
+				5EAE01261EDC1DA6000830A9 /* QKTabFirstBaseController.m */,
+			);
+			name = FirstBase;
+			sourceTree = "<group>";
+		};
+		5EAE01281EDC1DB8000830A9 /* NavBase */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE01291EDC1DC1000830A9 /* QKBaseNavController.h */,
+				5EAE012A1EDC1DC1000830A9 /* QKBaseNavController.m */,
+			);
+			name = NavBase;
+			sourceTree = "<group>";
+		};
+		5EAE012C1EDC1DCC000830A9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE012D1EDC1E05000830A9 /* QKTableBar.h */,
+				5EAE012E1EDC1E05000830A9 /* QKTableBar.m */,
+				5EAE01081EDC1CEA000830A9 /* QKMainTableBarController.h */,
+				5EAE01091EDC1CEA000830A9 /* QKMainTableBarController.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		5EAE01311EDC1E51000830A9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE01321EDC1E87000830A9 /* UIColor+QKColor.h */,
+				5EAE01331EDC1E87000830A9 /* UIColor+QKColor.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		5EAE01351EDC1F4A000830A9 /* EasyTest */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE01361EDC1F4A000830A9 /* QKReasouce.h */,
+				5EAE01371EDC1F4A000830A9 /* QKReasouce.m */,
+			);
+			path = EasyTest;
+			sourceTree = "<group>";
+		};
+		5EAE01391EDC1FFB000830A9 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				5EEC1FE11ED181D80035EE07 /* AppDelegate.h */,
+				5EEC1FE21ED181D80035EE07 /* AppDelegate.m */,
+				5EEC1FE31ED181D80035EE07 /* main.m */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
 		5EEC1FCD1ED181C20035EE07 /* Reasource */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,7 +417,6 @@
 				23FC8C391ED2E6C10001AF64 /* Constants */,
 				5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */,
 				5EEC1FCF1ED181C20035EE07 /* LaunchScreen.storyboard */,
-				5EEC1FD11ED181C20035EE07 /* Main.storyboard */,
 				5EEC1FD31ED181C20035EE07 /* Info.plist */,
 			);
 			path = Reasource;
@@ -292,11 +425,14 @@
 		5EEC1FE01ED181D80035EE07 /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				5EEC1FE11ED181D80035EE07 /* AppDelegate.h */,
-				5EEC1FE21ED181D80035EE07 /* AppDelegate.m */,
-				5EEC1FE31ED181D80035EE07 /* main.m */,
-				5EEC1FE41ED181D80035EE07 /* ViewController.h */,
-				5EEC1FE51ED181D80035EE07 /* ViewController.m */,
+				5EAE01391EDC1FFB000830A9 /* Start */,
+				5EAE012C1EDC1DCC000830A9 /* TabBar */,
+				5EAE01281EDC1DB8000830A9 /* NavBase */,
+				5EAE01241EDC1D9C000830A9 /* FirstBase */,
+				5EAE01201EDC1D87000830A9 /* MyCenter */,
+				5EAE011C1EDC1D71000830A9 /* Message */,
+				5EAE01181EDC1D40000830A9 /* Recommend */,
+				5EAE010B1EDC1D1C000830A9 /* Home */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -426,8 +562,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEC1FDD1ED181C20035EE07 /* Info.plist in Resources */,
-				5EEC1FDA1ED181C20035EE07 /* Main.storyboard in Resources */,
 				5EEC1FD41ED181C20035EE07 /* Assets.xcassets in Resources */,
+				5EAE013B1EDC215D000830A9 /* home.json in Resources */,
 				5EEC1FD71ED181C20035EE07 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +573,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEC1FDE1ED181C20035EE07 /* Info.plist in Resources */,
-				5EEC1FDB1ED181C20035EE07 /* Main.storyboard in Resources */,
 				5EEC1FD51ED181C20035EE07 /* Assets.xcassets in Resources */,
 				5EEC1FD81ED181C20035EE07 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -448,7 +583,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEC1FDF1ED181C20035EE07 /* Info.plist in Resources */,
-				5EEC1FDC1ED181C20035EE07 /* Main.storyboard in Resources */,
 				5EEC1FD61ED181C20035EE07 /* Assets.xcassets in Resources */,
 				5EEC1FD91ED181C20035EE07 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -584,9 +718,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEC1FEC1ED181D80035EE07 /* ViewController.m in Sources */,
+				5EAE01161EDC1D33000830A9 /* QKHomeNavBar.m in Sources */,
+				5EAE01171EDC1D33000830A9 /* QKHomeTabView.m in Sources */,
+				5EAE01151EDC1D33000830A9 /* QKHomeModel.m in Sources */,
 				5EEC1FE91ED181D80035EE07 /* main.m in Sources */,
+				5EAE011F1EDC1D7A000830A9 /* QKMessageController.m in Sources */,
+				5EAE011B1EDC1D63000830A9 /* QKRecommandController.m in Sources */,
+				5EAE01271EDC1DA6000830A9 /* QKTabFirstBaseController.m in Sources */,
 				5EEC1FE61ED181D80035EE07 /* AppDelegate.m in Sources */,
+				5EAE01341EDC1E87000830A9 /* UIColor+QKColor.m in Sources */,
+				5EAE01381EDC1F4A000830A9 /* QKReasouce.m in Sources */,
+				5EAE01141EDC1D33000830A9 /* HomeController.m in Sources */,
+				5EAE012F1EDC1E05000830A9 /* QKTableBar.m in Sources */,
+				5EAE010A1EDC1CEA000830A9 /* QKMainTableBarController.m in Sources */,
+				5EAE012B1EDC1DC1000830A9 /* QKBaseNavController.m in Sources */,
+				5EAE01231EDC1D8F000830A9 /* QKMyCenterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +742,6 @@
 			files = (
 				5EEC1FE71ED181D80035EE07 /* AppDelegate.m in Sources */,
 				5EEC1FEA1ED181D80035EE07 /* main.m in Sources */,
-				5EEC1FED1ED181D80035EE07 /* ViewController.m in Sources */,
 				5E679A131ECFEF7C00844946 /* ChiCoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,7 +752,6 @@
 			files = (
 				5EEC1FE81ED181D80035EE07 /* AppDelegate.m in Sources */,
 				5EEC1FEB1ED181D80035EE07 /* main.m in Sources */,
-				5EEC1FEE1ED181D80035EE07 /* ViewController.m in Sources */,
 				5E679A1E1ECFEF7C00844946 /* ChiCoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,14 +778,6 @@
 				5EEC1FD01ED181C20035EE07 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5EEC1FD11ED181C20035EE07 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5EEC1FD21ED181C20035EE07 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

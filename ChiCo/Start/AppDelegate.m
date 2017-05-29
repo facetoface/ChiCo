@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "QKMainTableBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,10 +17,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self startScene];
     // Override point for customization after application launch.
     return YES;
 }
 
+- (void)startScene
+{
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    QKMainTableBarController *tab = [[QKMainTableBarController alloc] init];
+    [self.window setRootViewController:tab];
+    
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"white"]
+                                       forBarMetrics:UIBarMetricsDefault];
+    
+    [self.window makeKeyAndVisible];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
