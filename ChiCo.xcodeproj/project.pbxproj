@@ -23,6 +23,8 @@
 		5EAE01341EDC1E87000830A9 /* UIColor+QKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01331EDC1E87000830A9 /* UIColor+QKColor.m */; };
 		5EAE01381EDC1F4A000830A9 /* QKReasouce.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01371EDC1F4A000830A9 /* QKReasouce.m */; };
 		5EAE013B1EDC215D000830A9 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EAE013A1EDC215D000830A9 /* home.json */; };
+		5ECC597B1EDD235F0072D38C /* QKSwithParamController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC597A1EDD235F0072D38C /* QKSwithParamController.m */; };
+		5ECC59811EDD24500072D38C /* QKSwitchParamTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC59801EDD24500072D38C /* QKSwitchParamTopBar.m */; };
 		5EEC1FD41ED181C20035EE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */; };
 		5EEC1FD51ED181C20035EE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */; };
 		5EEC1FD61ED181C20035EE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */; };
@@ -99,6 +101,10 @@
 		5EAE01361EDC1F4A000830A9 /* QKReasouce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKReasouce.h; sourceTree = "<group>"; };
 		5EAE01371EDC1F4A000830A9 /* QKReasouce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKReasouce.m; sourceTree = "<group>"; };
 		5EAE013A1EDC215D000830A9 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		5ECC59791EDD235F0072D38C /* QKSwithParamController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKSwithParamController.h; sourceTree = "<group>"; };
+		5ECC597A1EDD235F0072D38C /* QKSwithParamController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKSwithParamController.m; sourceTree = "<group>"; };
+		5ECC597F1EDD24500072D38C /* QKSwitchParamTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKSwitchParamTopBar.h; sourceTree = "<group>"; };
+		5ECC59801EDD24500072D38C /* QKSwitchParamTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKSwitchParamTopBar.m; sourceTree = "<group>"; };
 		5EEC1FC21ED17FD50035EE07 /* ChiCo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChiCo.pch; sourceTree = "<group>"; };
 		5EEC1FCE1ED181C20035EE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EEC1FD01ED181C20035EE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -307,6 +313,7 @@
 		5E6FF5821ED9C01F007331F6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				5ECC59751EDD22EC0072D38C /* SwithParam */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -408,6 +415,41 @@
 				5EEC1FE31ED181D80035EE07 /* main.m */,
 			);
 			name = Start;
+			sourceTree = "<group>";
+		};
+		5ECC59751EDD22EC0072D38C /* SwithParam */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC59761EDD22EC0072D38C /* Controller */,
+				5ECC59771EDD22EC0072D38C /* Model */,
+				5ECC59781EDD22EC0072D38C /* View */,
+			);
+			path = SwithParam;
+			sourceTree = "<group>";
+		};
+		5ECC59761EDD22EC0072D38C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC59791EDD235F0072D38C /* QKSwithParamController.h */,
+				5ECC597A1EDD235F0072D38C /* QKSwithParamController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ECC59771EDD22EC0072D38C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5ECC59781EDD22EC0072D38C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC597F1EDD24500072D38C /* QKSwitchParamTopBar.h */,
+				5ECC59801EDD24500072D38C /* QKSwitchParamTopBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5EEC1FCD1ED181C20035EE07 /* Reasource */ = {
@@ -721,9 +763,11 @@
 				5EAE01161EDC1D33000830A9 /* QKHomeNavBar.m in Sources */,
 				5EAE01171EDC1D33000830A9 /* QKHomeTabView.m in Sources */,
 				5EAE01151EDC1D33000830A9 /* QKHomeModel.m in Sources */,
+				5ECC597B1EDD235F0072D38C /* QKSwithParamController.m in Sources */,
 				5EEC1FE91ED181D80035EE07 /* main.m in Sources */,
 				5EAE011F1EDC1D7A000830A9 /* QKMessageController.m in Sources */,
 				5EAE011B1EDC1D63000830A9 /* QKRecommandController.m in Sources */,
+				5ECC59811EDD24500072D38C /* QKSwitchParamTopBar.m in Sources */,
 				5EAE01271EDC1DA6000830A9 /* QKTabFirstBaseController.m in Sources */,
 				5EEC1FE61ED181D80035EE07 /* AppDelegate.m in Sources */,
 				5EAE01341EDC1E87000830A9 /* UIColor+QKColor.m in Sources */,
