@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2364E92D1EE0E96500C5D74C /* QKDownLoadImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */; };
+		2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9331EE13E0C00C5D74C /* QKBlockController.m */; };
+		2364E9371EE13E5800C5D74C /* QKBlockOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9361EE13E5800C5D74C /* QKBlockOne.m */; };
 		5E679A131ECFEF7C00844946 /* ChiCoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E679A121ECFEF7C00844946 /* ChiCoTests.m */; };
 		5E679A1E1ECFEF7C00844946 /* ChiCoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E679A1D1ECFEF7C00844946 /* ChiCoUITests.m */; };
 		5EAE010A1EDC1CEA000830A9 /* QKMainTableBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE01091EDC1CEA000830A9 /* QKMainTableBarController.m */; };
@@ -66,6 +68,10 @@
 /* Begin PBXFileReference section */
 		2364E92B1EE0E96500C5D74C /* QKDownLoadImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKDownLoadImageController.h; sourceTree = "<group>"; };
 		2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKDownLoadImageController.m; sourceTree = "<group>"; };
+		2364E9321EE13E0C00C5D74C /* QKBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBlockController.h; sourceTree = "<group>"; };
+		2364E9331EE13E0C00C5D74C /* QKBlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBlockController.m; sourceTree = "<group>"; };
+		2364E9351EE13E5800C5D74C /* QKBlockOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBlockOne.h; sourceTree = "<group>"; };
+		2364E9361EE13E5800C5D74C /* QKBlockOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBlockOne.m; sourceTree = "<group>"; };
 		23FC8C3A1ED2E7180001AF64 /* FrameConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameConstants.h; sourceTree = "<group>"; };
 		5C493B76859D15E436041AB5 /* Pods-ChiCoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCoUITests/Pods-ChiCoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C6B044E7C8476110BA57D4C /* Pods-ChiCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCo/Pods-ChiCo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +203,8 @@
 		2364E92F1EE13DC300C5D74C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2364E9321EE13E0C00C5D74C /* QKBlockController.h */,
+				2364E9331EE13E0C00C5D74C /* QKBlockController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +212,8 @@
 		2364E9301EE13DC300C5D74C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2364E9351EE13E5800C5D74C /* QKBlockOne.h */,
+				2364E9361EE13E5800C5D74C /* QKBlockOne.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -829,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2364E9371EE13E5800C5D74C /* QKBlockOne.m in Sources */,
 				5EAE01161EDC1D33000830A9 /* QKHomeNavBar.m in Sources */,
 				2364E92D1EE0E96500C5D74C /* QKDownLoadImageController.m in Sources */,
 				5EAE01171EDC1D33000830A9 /* QKHomeTabView.m in Sources */,
@@ -840,6 +851,7 @@
 				5ECC59811EDD24500072D38C /* QKSwitchParamTopBar.m in Sources */,
 				5EAE01271EDC1DA6000830A9 /* QKTabFirstBaseController.m in Sources */,
 				5EEC1FE61ED181D80035EE07 /* AppDelegate.m in Sources */,
+				2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */,
 				5EAE01341EDC1E87000830A9 /* UIColor+QKColor.m in Sources */,
 				5EAE01381EDC1F4A000830A9 /* QKReasouce.m in Sources */,
 				5EAE01141EDC1D33000830A9 /* HomeController.m in Sources */,

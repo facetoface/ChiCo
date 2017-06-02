@@ -5,6 +5,10 @@
  "push_param" : {},
  "push_type" : "1"
  },
- 
- 
+ {
+ "identifer" : "QKBlockController",
+ "title" : "Block",
+ "push_param" : {},
+ "push_type" : "1"
+ },
 ]
