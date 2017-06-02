@@ -10,6 +10,8 @@
 
 @interface QKDownLoadImageController ()
 
+@property (nonatomic,strong)UIScrollView *bodyView;
+
 @end
 
 @implementation QKDownLoadImageController
@@ -17,6 +19,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupSubViews];
+    
+}
+
+- (void)setupSubViews
+{
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+    self.bodyView = ({
+        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+        [self.view addSubview:scrollView];
+        scrollView;
+    });
+    [self loadImage];
+}
+
+- (void)loadImage
+{
+    UIImageView *imageView = [[UIImageView alloc] init];
+    [self.bodyView addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(QK_PADDING);
+        make.right.mas_equalTo(-QK_PADDING);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH-2*QK_PADDING, 100) );
+        make.bottom.mas_equalTo(0);
+    }];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:@"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=897795441,1342958893&fm=11&gp=0.jpg"]];
+    NSURL *url = imageView.sd_imageURL;
+    NSLog(@"%@",url);
+    
 }
 
 - (void)didReceiveMemoryWarning
