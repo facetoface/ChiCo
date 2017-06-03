@@ -1,5 +1,5 @@
 //
-//  IQKeyboardManagerConstantsInternal.h
+//  KeyboardManager.h
 // https://github.com/hackiftekhar/IQKeyboardManager
 // Copyright (c) 2013-16 Iftekhar Qurashi.
 //
@@ -21,28 +21,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#ifndef IQKeyboardManagerConstantsInternal_h
-#define IQKeyboardManagerConstantsInternal_h
 
+#ifndef KeyboardManager_h
+#define KeyboardManager_h
 
-///-----------------------------------
-/// @name IQLayoutGuidePosition
-///-----------------------------------
-
-/**
- `IQLayoutGuidePositionNone`
- If there are no IQLayoutGuideConstraint associated with viewController
- 
- `IQLayoutGuidePositionTop`
- If provided IQLayoutGuideConstraint is associated with with viewController topLayoutGuide
- 
- `IQLayoutGuidePositionBottom`
- If provided IQLayoutGuideConstraint is associated with with viewController bottomLayoutGuide
- */
-typedef NS_ENUM(NSInteger, IQLayoutGuidePosition) {
-    IQLayoutGuidePositionNone,
-    IQLayoutGuidePositionTop,
-    IQLayoutGuidePositionBottom,
-};
+#import "IQBarButtonItem.h"
+#import "IQKeyboardManager.h"
+#import "IQKeyboardManagerConstants.h"
+#import "IQKeyboardReturnKeyHandler.h"
+#import "IQTextView.h"
+#import "IQTitleBarButtonItem.h"
+#import "IQToolbar.h"
+#import "IQUIView+Hierarchy.h"
+#import "IQUIView+IQKeyboardToolbar.h"
+#import "IQUIWindow+Hierarchy.h"
 
 #endif

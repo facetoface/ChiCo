@@ -22,14 +22,13 @@
 // THE SOFTWARE.
 
 #import "IQBarButtonItem.h"
+#import "IQToolbar.h"
 #import "IQKeyboardManagerConstantsInternal.h"
 
 @implementation IQBarButtonItem
 
-+(void)initialize
++(void)load
 {
-    [super initialize];
-
     //Tint color
     [[self appearance] setTintColor:nil];
 

@@ -644,10 +644,6 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 	return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
-+ (NSValueTransformer *)NSUUIDJSONTransformer {
-	return [NSValueTransformer valueTransformerForName:MTLUUIDValueTransformerName];
-}
-
 @end
 
 @implementation MTLJSONAdapter (Deprecated)
