@@ -11,17 +11,49 @@
 @interface QKDownLoadImageController ()
 
 @property (nonatomic,strong)UIScrollView *bodyView;
+@property (nonatomic,copy)NSString *test;
 
 @end
 
 @implementation QKDownLoadImageController
-
+{
+    NSString *str;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self setupSubViews];
     
+    [self testPureInt];
+    
 }
+
+- (void)testPureInt
+{
+   
+    NSArray *array = @[@"",@"1",@"112",@"3afs",@"daf",@"990i1"];
+    for (NSUInteger index = 0; index < [array count]; index++) {
+        [self isPureInt:array[index]];
+    }
+    
+}
+
+- (void)isPureInt:(NSString*)string
+{
+    
+    NSScanner* scan = [NSScanner scannerWithString:string];
+    
+    int val;
+    
+    if ([scan scanInt:&val] && [scan isAtEnd]) {
+        NSLog(@"%@ 是纯数字",string);
+    } else
+    {
+        NSLog(@"%@ 不是是纯数字",string);
+    }
+    
+}
+
 
 - (void)setupSubViews
 {
