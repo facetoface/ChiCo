@@ -26,7 +26,25 @@
     
     [self testPureInt];
     
+    [self timerTest];
+    
 }
+
+- (void)timerTest
+{
+    [NSTimer scheduledTimerWithTimeInterval:1
+                                     target:self
+                                   selector:@selector(refreshPayResult)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void)refreshPayResult
+{
+    NSLog(@"safdlkjasfdk");
+    
+}
+
 
 - (void)testPureInt
 {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2348A3031EEF75D20033D1BF /* QKStringScannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3021EEF75D20033D1BF /* QKStringScannerController.m */; };
+		2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3051EEF760D0033D1BF /* QKStringScanner.m */; };
+		2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */; };
 		2364E92D1EE0E96500C5D74C /* QKDownLoadImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */; };
 		2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9331EE13E0C00C5D74C /* QKBlockController.m */; };
 		2364E9371EE13E5800C5D74C /* QKBlockOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9361EE13E5800C5D74C /* QKBlockOne.m */; };
@@ -67,6 +70,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2348A3011EEF75D20033D1BF /* QKStringScannerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKStringScannerController.h; sourceTree = "<group>"; };
+		2348A3021EEF75D20033D1BF /* QKStringScannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKStringScannerController.m; sourceTree = "<group>"; };
+		2348A3041EEF760D0033D1BF /* QKStringScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKStringScanner.h; sourceTree = "<group>"; };
+		2348A3051EEF760D0033D1BF /* QKStringScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKStringScanner.m; sourceTree = "<group>"; };
+		2348A30C1EEF7A940033D1BF /* QKEasyTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKEasyTestView.h; sourceTree = "<group>"; };
+		2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKEasyTestView.m; sourceTree = "<group>"; };
 		2364E92B1EE0E96500C5D74C /* QKDownLoadImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKDownLoadImageController.h; sourceTree = "<group>"; };
 		2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKDownLoadImageController.m; sourceTree = "<group>"; };
 		2364E9321EE13E0C00C5D74C /* QKBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBlockController.h; sourceTree = "<group>"; };
@@ -160,6 +169,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2348A2FD1EEF75A10033D1BF /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				2348A2FE1EEF75A10033D1BF /* Controller */,
+				2348A2FF1EEF75A10033D1BF /* Model */,
+				2348A3001EEF75A10033D1BF /* View */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		2348A2FE1EEF75A10033D1BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2348A3011EEF75D20033D1BF /* QKStringScannerController.h */,
+				2348A3021EEF75D20033D1BF /* QKStringScannerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2348A2FF1EEF75A10033D1BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2348A3041EEF760D0033D1BF /* QKStringScanner.h */,
+				2348A3051EEF760D0033D1BF /* QKStringScanner.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2348A3001EEF75A10033D1BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2348A3081EEF77D00033D1BF /* EasyTest */ = {
+			isa = PBXGroup;
+			children = (
+				2348A30C1EEF7A940033D1BF /* QKEasyTestView.h */,
+				2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */,
+			);
+			path = EasyTest;
+			sourceTree = "<group>";
+		};
 		2364E9271EE0E94000C5D74C /* DownLoadImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +419,7 @@
 		5E6FF57E1ED9BFC8007331F6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2348A3081EEF77D00033D1BF /* EasyTest */,
 				5EAE01311EDC1E51000830A9 /* Color */,
 			);
 			path = UI;
@@ -395,6 +449,7 @@
 		5E6FF5821ED9C01F007331F6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				2348A2FD1EEF75A10033D1BF /* Scanner */,
 				2364E92E1EE13DC300C5D74C /* Block */,
 				2364E9271EE0E94000C5D74C /* DownLoadImage */,
 				5ECC59751EDD22EC0072D38C /* SwithParam */,
@@ -888,13 +943,16 @@
 				5EAE011B1EDC1D63000830A9 /* QKRecommandController.m in Sources */,
 				5ECC59811EDD24500072D38C /* QKSwitchParamTopBar.m in Sources */,
 				5EAE01271EDC1DA6000830A9 /* QKTabFirstBaseController.m in Sources */,
+				2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */,
 				5EEC1FE61ED181D80035EE07 /* AppDelegate.m in Sources */,
 				2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */,
 				5EAE01341EDC1E87000830A9 /* UIColor+QKColor.m in Sources */,
 				5EAE01381EDC1F4A000830A9 /* QKReasouce.m in Sources */,
 				5EAE01141EDC1D33000830A9 /* HomeController.m in Sources */,
+				2348A3031EEF75D20033D1BF /* QKStringScannerController.m in Sources */,
 				5EAE012F1EDC1E05000830A9 /* QKTableBar.m in Sources */,
 				5EAE010A1EDC1CEA000830A9 /* QKMainTableBarController.m in Sources */,
+				2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */,
 				5EAE012B1EDC1DC1000830A9 /* QKBaseNavController.m in Sources */,
 				5EAE01231EDC1D8F000830A9 /* QKMyCenterController.m in Sources */,
 			);
