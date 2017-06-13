@@ -18,7 +18,14 @@
  */
 + (BOOL)isPureInt:(NSString *)string;
 
-
+/**
+ *  检查是不是中文字符串
+ *
+ *  @param chineseStr 待检测的字符串
+ *
+ *  @return YES:全部为中文字符串
+ */
++ (BOOL)isValidChinese:(NSString *)chineseStr;
 
 @end
 

@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     [self setTitle:@"字符串检测"];
-    QKEasyTestView *easyTestView = [[QKEasyTestView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) topSpace:20 lrSpace:10 titleArray:@[@"纯数字"]];
+    QKEasyTestView *easyTestView = [[QKEasyTestView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) topSpace:20 lrSpace:10 titleArray:@[@"纯数字",@"中文"]];
     [self.view addSubview:easyTestView];
     [easyTestView setDelegate:self];
 }
@@ -32,6 +32,7 @@
     switch (index) {
         case 0:
         {
+            //纯数字检测
             NSArray *array = @[@"",@"1",@"112",@"3afs",@"daf",@"990i1"];
             for (NSUInteger index = 0; index < [array count]; index++) {
                 NSString *scanString = [array objectAtIndex:index];
@@ -39,6 +40,20 @@
                     NSLog(@"\"%@\" 是纯数字",scanString);
                 } else {
                      NSLog(@"\"%@\" 不是纯数字",scanString);
+                }
+            }
+        }
+            break;
+        case 1:
+        {
+            //纯中文字符串检测
+            NSArray *array = @[@"",@" ",@"112",@"ABC的",@"，。",@"不是不是a对的",@"不是 不是",@"就啊发生的",@"愛"];
+            for (NSUInteger index = 0; index < [array count]; index++) {
+                NSString *scanString = [array objectAtIndex:index];
+                if ([QKStringScanner isValidChinese:scanString]) {
+                    NSLog(@"\"%@\" 是中文",scanString);
+                } else {
+                    NSLog(@"\"%@\" 不是中文",scanString);
                 }
             }
         }

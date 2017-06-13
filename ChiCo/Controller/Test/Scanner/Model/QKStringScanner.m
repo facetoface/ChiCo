@@ -20,5 +20,20 @@
     return [scan scanInt:&val] && [scan isAtEnd];
 }
 
+/**
+ *  检查是不是中文字符串
+ *
+ *  @param chineseStr 待检测的字符串
+ *
+ *  @return YES:全部为中文字符串
+ */
++ (BOOL)isValidChinese:(NSString *)chineseStr
+{
+    NSString *str = @"^[\u4e00-\u9fa5]{1,}$";
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",str];
+    
+    return [predicate evaluateWithObject:chineseStr];
+}
+
 @end
 
