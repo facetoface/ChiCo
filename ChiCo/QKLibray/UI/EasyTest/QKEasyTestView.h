@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol  QKEasyTestViewDelegate <NSObject>
+
+- (void)clickEasyTestView:(NSUInteger)index
+                    title:(NSString *)title;
+
+@end
+
 @interface QKEasyTestView : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame
+                     topSpace:(CGFloat)topSpace
+                      lrSpace:(CGFloat)lrSpace
                    titleArray:(NSArray <NSString *>*)titleArray;
+
+@property (nonatomic,assign) id <QKEasyTestViewDelegate> delegate;
 
 @end

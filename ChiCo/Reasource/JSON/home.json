@@ -11,4 +11,10 @@
  "push_param" : {},
  "push_type" : "1"
  },
+ {
+ "identifer" : "QKStringScannerController",
+ "title" : "字符串检测",
+ "push_param" : {},
+ "push_type" : "1"
+ },
 ]

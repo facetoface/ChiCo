@@ -10,6 +10,8 @@
 
 @interface QKEasyTestView ()
 
+@property (nonatomic,assign)CGFloat lrSpace;
+@property (nonatomic,assign)CGFloat topSpace;
 @property (nonatomic,weak)UIScrollView *scrollView;
 @property (nonatomic,strong)NSArray <NSString *>*dataSouce;
 
@@ -18,6 +20,8 @@
 @implementation QKEasyTestView
 
 - (instancetype)initWithFrame:(CGRect)frame
+                     topSpace:(CGFloat)topSpace
+                      lrSpace:(CGFloat)lrSpace
                    titleArray:(NSArray <NSString *>*)titleArray
 {
     self = [super initWithFrame:frame];
@@ -27,20 +31,23 @@
         UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
         [self addSubview:scrollView];
         self.scrollView = scrollView;
+        self.topSpace = topSpace;
+        self.lrSpace = lrSpace;
         [self setSubViews:self.scrollView];
     }
     return self;
 }
 
-- (void)setSubViews:(UIView *)bodyView
+- (void)setSubViews:(UIScrollView *)bodyView
 {
-    CGFloat originY = 20;
-    CGFloat leftSpace = 10;
+    CGFloat width = self.frame.size.width;
+    CGFloat originY = self.topSpace;
+    CGFloat leftSpace = self.lrSpace;
     NSUInteger count = [self.dataSouce count];
     CGFloat btnH = 30;
     CGFloat btnW = 90;
-    NSUInteger rowCount = (SCREEN_WIDTH-20)/btnW;
-    CGFloat ltSpace = (SCREEN_WIDTH-btnW*rowCount-20)/(rowCount-1);
+    NSUInteger rowCount = (width-self.lrSpace*2)/btnW;
+    CGFloat ltSpace = (width-btnW*rowCount-self.lrSpace*2)/(rowCount-1);
     
     for (NSUInteger index = 0; index < count; index ++)
     {
@@ -48,7 +55,7 @@
         NSUInteger row = index/rowCount;
         NSUInteger list = index%rowCount;
         CGFloat btnX = leftSpace + list*(btnW+ltSpace);
-        CGFloat btnY = originY + row * (btnH+10);
+        CGFloat btnY = originY + row * (btnH+self.lrSpace);
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setFrame:CGRectMake(btnX, btnY, btnW, btnH)];
         button.tag = (NSInteger)(2000+index);
@@ -65,11 +72,18 @@
         [bodyView addSubview:button];
         
     }
+    
+    CGFloat height = originY + btnH;
+    [bodyView setContentSize:CGSizeMake(width, height)];
+
 }
 
-- (void)buttonClick:(NSString *)button
+- (void)buttonClick:(UIButton *)button
 {
-    
+    NSUInteger tag = (NSUInteger)button.tag - 2000;
+    if ([self.delegate respondsToSelector:@selector(clickEasyTestView:title:)]) {
+        [self.delegate clickEasyTestView:tag title:self.dataSouce[tag]];
+    }
 }
 
 @end
