@@ -13,6 +13,7 @@
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <ReactiveCocoa.h>
+#import "FrameConstants.h"
 
 #ifndef __OPTIMIZE__
 //调试模式
