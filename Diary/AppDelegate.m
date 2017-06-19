@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "YZBaseNavController.h"
+#import "YZGuideController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,6 +19,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    YZGuideController *guide = [[YZGuideController alloc] init];
+    YZBaseNavController *tab = [[YZBaseNavController alloc] initWithRootViewController:guide];
+   
+    
+    [self.window setRootViewController:tab];
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }

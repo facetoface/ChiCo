@@ -1,29 +1,33 @@
 //
-//  ViewController.m
-//  Diary
+//  YZGuideController.m
+//  ChiCo
 //
 //  Created by ChiCo on 2017/6/19.
 //  Copyright © 2017年 一米阳光. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "YZGuideController.h"
 
-@interface ViewController ()
+@interface YZGuideController ()
 
 @end
 
-@implementation ViewController
+@implementation YZGuideController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view setBackgroundColor:[UIColor greenColor]];
+    
+    
+    // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end
