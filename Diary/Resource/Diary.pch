@@ -14,6 +14,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <ReactiveCocoa.h>
 #import "FrameConstants.h"
+#import "UIColor+YZColor.h"
 
 #ifndef __OPTIMIZE__
 //调试模式

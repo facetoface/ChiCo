@@ -21,10 +21,10 @@
 
     self = [super init];
     if (self) {
-        
+        [self setNavigationBarHidden:YES];
         YZMainController *main = [[YZMainController alloc] init];
         YZGuideController *guide = [[YZGuideController alloc] init];
-        [self setViewControllers:@[main,guide]];
+        [self setViewControllers:@[guide,main]];
         
     }
     return self;

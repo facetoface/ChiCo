@@ -18,8 +18,35 @@
     [super viewDidLoad];
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    
+    [self setUpSubViews];
     // Do any additional setup after loading the view.
 }
+
+- (void)setUpSubViews
+{
+
+    UIView *bodyView = [[UIView alloc] init];
+    [self.view addSubview:bodyView];
+    [bodyView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(20);
+        make.right.mas_equalTo(-20);
+        make.top.mas_equalTo(80);
+        make.bottom.mas_equalTo(-50);
+    }];
+    
+//    [bodyView setClipsToBounds:YES];
+    bodyView.layer.cornerRadius = 20;
+    [bodyView setBackgroundColor:[UIColor yellowColor]];
+    bodyView.layer.borderColor = [[UIColor colorWithHexString:@"#eaeaea"] CGColor];
+    bodyView.layer.shadowColor = [UIColor blueColor].CGColor;
+    bodyView.layer.shadowRadius = 18;
+    bodyView.layer.shadowOffset = CGSizeMake(15, 5);
+    bodyView.layer.borderWidth = 1;
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
