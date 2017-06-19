@@ -1807,3 +1807,9 @@ Pods/UITableView+FDTemplateLayoutCell/Classes/UITableView+FDTemplateLayoutCellDe
 Pods/UITableView+FDTemplateLayoutCell/Classes/UITableView+FDTemplateLayoutCellDebug.m
 Pods/UITableView+FDTemplateLayoutCell/LICENSE
 Pods/UITableView+FDTemplateLayoutCell/README.md
+Pods/Target Support Files/Pods-Diary/Pods-Diary-acknowledgements.markdown
+Pods/Target Support Files/Pods-Diary/Pods-Diary-dummy.m
+Pods/Target Support Files/Pods-Diary/Pods-Diary-frameworks.sh
+Pods/Target Support Files/Pods-Diary/Pods-Diary-resources.sh
+Pods/Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig
+Pods/Target Support Files/Pods-Diary/Pods-Diary.release.xcconfig

@@ -47,6 +47,29 @@ target :ChiCoTests do
     pod 'GPUImage'
 end
 
+target :Diary do
+    pod 'ReactiveCocoa', '~> 2.4.7'
+    pod 'AFNetworking'
+    pod 'Mantle'
+    pod 'FMDB'
+    pod 'TMCache'
+    pod 'SSKeychain', '~> 1.2.3'
+    pod 'MBProgressHUD'
+    pod 'CocoaLumberjack'
+    pod 'SVPullToRefresh'
+    pod 'SVProgressHUD'
+    pod 'JSONKit-NoWarning'
+    pod 'IQKeyboardManager'
+    pod 'MMPickerView'
+    pod 'Masonry'
+    pod 'MJExtension'
+    pod 'MJRefresh'
+    pod 'TTTAttributedLabel'
+    pod 'UITableView+FDTemplateLayoutCell'
+    pod 'SDWebImage'
+    pod 'GPUImage'
+end
+
 
 target :ChiCoUITests do
     pod 'ReactiveCocoa', '~> 2.4.7'
