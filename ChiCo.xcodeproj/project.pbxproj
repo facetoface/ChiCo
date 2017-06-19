@@ -498,8 +498,6 @@
 				238360691EF7CC2A0083E894 /* Guide */,
 				238360681EF7CC1F0083E894 /* Main */,
 				238360671EF7CC100083E894 /* Nav */,
-				238360641EF7CBF20083E894 /* YZStartController.h */,
-				238360651EF7CBF20083E894 /* YZStartController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -521,6 +519,8 @@
 		238360671EF7CC100083E894 /* Nav */ = {
 			isa = PBXGroup;
 			children = (
+				238360641EF7CBF20083E894 /* YZStartController.h */,
+				238360651EF7CBF20083E894 /* YZStartController.m */,
 			);
 			name = Nav;
 			sourceTree = "<group>";

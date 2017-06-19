@@ -19,9 +19,13 @@
 - (instancetype)init
 {
 
-    YZGuideController *guide = [[YZGuideController alloc] init];
-    self = [super initWithRootViewController:guide];
+    self = [super init];
     if (self) {
+        
+        YZMainController *main = [[YZMainController alloc] init];
+        YZGuideController *guide = [[YZGuideController alloc] init];
+        [self setViewControllers:@[main,guide]];
+        
     }
     return self;
 }
