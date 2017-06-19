@@ -1,0 +1,25 @@
+//
+//  Diary.pch
+//  ChiCo
+//
+//  Created by ChiCo on 2017/6/19.
+//  Copyright © 2017年 一米阳光. All rights reserved.
+//
+
+#ifndef Diary_pch
+#define Diary_pch
+
+#import <Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <ReactiveCocoa.h>
+
+#ifndef __OPTIMIZE__
+//调试模式
+#define NSLog(...) printf("第%d行 %s %s\n",__LINE__,__FUNCTION__,[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+#else
+#define  NSLog(...){}
+#endif
+
+
+#endif /* Diary_pch */
