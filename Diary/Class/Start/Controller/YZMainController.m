@@ -59,12 +59,23 @@
    
     
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(-25, 0)];
+    [path moveToPoint:CGPointMake(-0, -5)];
     [path addCurveToPoint:CGPointMake(-20, 210)
-            controlPoint1:CGPointMake(0, 50)
+            controlPoint1:CGPointMake(-5, 100)
             controlPoint2:CGPointMake(0, 150)];
+    
+//    [path addCurveToPoint:CGPointMake(230, 220)
+//            controlPoint1:CGPointMake(50, 200)
+//            controlPoint2:CGPointMake(150, 200)];
+//    
+//    [path addCurveToPoint:CGPointMake(230, 0)
+//            controlPoint1:CGPointMake(200, 150)
+//            controlPoint2:CGPointMake(200, 50)];
+//    
+    
     [path addLineToPoint:CGPointMake(200, 200)];
     [path addLineToPoint:CGPointMake(200, 0)];
+    [path addLineToPoint:CGPointMake(0, 0)];
     [path closePath];
     bodyView.layer.shadowPath =  path.CGPath;;
     
