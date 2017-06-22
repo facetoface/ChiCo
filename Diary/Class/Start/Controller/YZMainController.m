@@ -17,33 +17,63 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self.view setBackgroundColor:[UIColor yellowColor]];
     
+    
+//    [self test];
     [self setUpSubViews];
     // Do any additional setup after loading the view.
+}
+
+- (void)test
+{
+    UIView *bodyView1 = [[UIView alloc] initWithFrame:CGRectMake(80, 80, 100, 100)];
+    [bodyView1 setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:bodyView1];
+    
+    UIView *bodyView2 = [[UIView alloc] initWithFrame:CGRectMake(220, 80, 100, 100)];
+    [bodyView2 setBackgroundColor:[UIColor yellowColor]];
+    [self.view addSubview:bodyView2];
+    
+    UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
+    [blueView setBackgroundColor:[UIColor blueColor]];
+    [bodyView2 addSubview:blueView];
+    [bodyView1 addSubview:blueView];
+    
+    
+    
+//    [self.view addSubview:blueView];
+
 }
 
 - (void)setUpSubViews
 {
 
+    UIView *bigView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, SCREEN_HEIGHT-100)];
+    [self.view addSubview:bigView];
+    
     UIView *bodyView = [[UIView alloc] init];
-    [self.view addSubview:bodyView];
-    [bodyView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(20);
-        make.right.mas_equalTo(-20);
-        make.top.mas_equalTo(80);
-        make.bottom.mas_equalTo(-50);
-    }];
+    [bigView addSubview:bodyView];
+    [bodyView setFrame:CGRectMake(120, 120, 200, 200)];
+ 
+   
     
-//    [bodyView setClipsToBounds:YES];
-    bodyView.layer.cornerRadius = 20;
-    [bodyView setBackgroundColor:[UIColor yellowColor]];
-    bodyView.layer.borderColor = [[UIColor colorWithHexString:@"#eaeaea"] CGColor];
-    bodyView.layer.shadowColor = [UIColor blueColor].CGColor;
-    bodyView.layer.shadowRadius = 18;
-    bodyView.layer.shadowOffset = CGSizeMake(15, 5);
-    bodyView.layer.borderWidth = 1;
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(-25, 0)];
+    [path addCurveToPoint:CGPointMake(-20, 210)
+            controlPoint1:CGPointMake(0, 50)
+            controlPoint2:CGPointMake(0, 150)];
+    [path addLineToPoint:CGPointMake(200, 200)];
+    [path addLineToPoint:CGPointMake(200, 0)];
+    [path closePath];
+    bodyView.layer.shadowPath =  path.CGPath;;
     
+    
+    [bodyView setBackgroundColor:[UIColor cyanColor]];
+    bodyView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    bodyView.layer.shadowRadius = 1;
+    bodyView.layer.shadowOffset = CGSizeMake(0,0);
+    bodyView.layer.shadowOpacity = 0.8;
 }
 
 
