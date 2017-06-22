@@ -17,4 +17,10 @@
  "push_param" : {},
  "push_type" : "1"
  },
+ {
+ "identifer" : "QKBeZierController",
+ "title" : "贝赛尔曲线",
+ "push_param" : {},
+ "push_type" : "1"
+ },
 ]

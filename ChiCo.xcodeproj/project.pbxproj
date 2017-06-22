@@ -25,6 +25,8 @@
 		2383606C1EF7CC3E0083E894 /* YZGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2383606B1EF7CC3E0083E894 /* YZGuideController.m */; };
 		2383606F1EF7CC5F0083E894 /* YZMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2383606E1EF7CC5F0083E894 /* YZMainController.m */; };
 		238360741EF7D0D50083E894 /* UIColor+YZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 238360731EF7D0D50083E894 /* UIColor+YZColor.m */; };
+		238CDED51EFB90A4003C9917 /* QKBeZierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238CDED41EFB90A4003C9917 /* QKBeZierController.m */; };
+		238CDED81EFB9172003C9917 /* QKBezierView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 238CDED71EFB9172003C9917 /* QKBezierView1.m */; };
 		5E679A131ECFEF7C00844946 /* ChiCoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E679A121ECFEF7C00844946 /* ChiCoTests.m */; };
 		5E679A1E1ECFEF7C00844946 /* ChiCoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E679A1D1ECFEF7C00844946 /* ChiCoUITests.m */; };
 		5EAD65891EE2582400C6D960 /* QKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD65881EE2582400C6D960 /* QKWebImageDownloader.m */; };
@@ -134,6 +136,10 @@
 		2383606E1EF7CC5F0083E894 /* YZMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZMainController.m; sourceTree = "<group>"; };
 		238360721EF7D0D50083E894 /* UIColor+YZColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YZColor.h"; sourceTree = "<group>"; };
 		238360731EF7D0D50083E894 /* UIColor+YZColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YZColor.m"; sourceTree = "<group>"; };
+		238CDED31EFB90A4003C9917 /* QKBeZierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBeZierController.h; sourceTree = "<group>"; };
+		238CDED41EFB90A4003C9917 /* QKBeZierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBeZierController.m; sourceTree = "<group>"; };
+		238CDED61EFB9172003C9917 /* QKBezierView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView1.h; sourceTree = "<group>"; };
+		238CDED71EFB9172003C9917 /* QKBezierView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView1.m; sourceTree = "<group>"; };
 		23FC8C3A1ED2E7180001AF64 /* FrameConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameConstants.h; sourceTree = "<group>"; };
 		5C493B76859D15E436041AB5 /* Pods-ChiCoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCoUITests/Pods-ChiCoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C6B044E7C8476110BA57D4C /* Pods-ChiCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChiCo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChiCo/Pods-ChiCo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -564,6 +570,41 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		238CDECF1EFB9071003C9917 /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				238CDED01EFB9071003C9917 /* Controller */,
+				238CDED11EFB9071003C9917 /* Model */,
+				238CDED21EFB9071003C9917 /* View */,
+			);
+			path = Bezier;
+			sourceTree = "<group>";
+		};
+		238CDED01EFB9071003C9917 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				238CDED31EFB90A4003C9917 /* QKBeZierController.h */,
+				238CDED41EFB90A4003C9917 /* QKBeZierController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		238CDED11EFB9071003C9917 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		238CDED21EFB9071003C9917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				238CDED61EFB9172003C9917 /* QKBezierView1.h */,
+				238CDED71EFB9172003C9917 /* QKBezierView1.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		23FC8C391ED2E6C10001AF64 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -738,6 +779,7 @@
 		5E6FF5821ED9C01F007331F6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				238CDECF1EFB9071003C9917 /* Bezier */,
 				2348A2FD1EEF75A10033D1BF /* Scanner */,
 				2364E92E1EE13DC300C5D74C /* Block */,
 				2364E9271EE0E94000C5D74C /* DownLoadImage */,
@@ -1407,6 +1449,7 @@
 				2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */,
 				5EEC1FE61ED181D80035EE07 /* AppDelegate.m in Sources */,
 				2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */,
+				238CDED81EFB9172003C9917 /* QKBezierView1.m in Sources */,
 				5EAE01341EDC1E87000830A9 /* UIColor+QKColor.m in Sources */,
 				5EAE01381EDC1F4A000830A9 /* QKReasouce.m in Sources */,
 				5EAE01141EDC1D33000830A9 /* HomeController.m in Sources */,
@@ -1416,6 +1459,7 @@
 				2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */,
 				5EAE012B1EDC1DC1000830A9 /* QKBaseNavController.m in Sources */,
 				5EAE01231EDC1D8F000830A9 /* QKMyCenterController.m in Sources */,
+				238CDED51EFB90A4003C9917 /* QKBeZierController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
