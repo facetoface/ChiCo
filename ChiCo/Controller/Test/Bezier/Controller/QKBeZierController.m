@@ -8,8 +8,8 @@
 
 #import "QKBeZierController.h"
 #import "QKBezierView1.h"
-
-
+#import "QKBezierView2.h"
+#import <objc/message.h>
 @interface QKBeZierController ()
 @property (nonatomic,weak)UIScrollView *bodyView;
 @end
@@ -26,10 +26,16 @@
     [self.view addSubview:scrollView];
     self.bodyView = scrollView;
     
-    QKBezierView1 *view1 = [[QKBezierView1 alloc] initWithFrame:rect];
-    [scrollView addSubview:view1];
-    
-    [scrollView setContentSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+    NSUInteger testCount = 2;
+    for (NSUInteger index = 1; index <= testCount; index++) {
+        rect.origin.x = SCREEN_WIDTH * (index-1);
+        NSString *className = [NSString stringWithFormat:@"QKBezierView%d",(int)index];
+        Class viewClass = NSClassFromString(className);
+        UIView *view = ((UIView *(*)(id, SEL, CGRect))objc_msgSend)([viewClass alloc], @selector(initWithFrame:), rect);
+        [scrollView addSubview:view];
+    }
+
+    [scrollView setContentSize:CGSizeMake(SCREEN_WIDTH*testCount, SCREEN_HEIGHT-64)];
     [scrollView setPagingEnabled:YES];
     [scrollView setShowsVerticalScrollIndicator:NO];
     [scrollView setShowsHorizontalScrollIndicator:NO];
