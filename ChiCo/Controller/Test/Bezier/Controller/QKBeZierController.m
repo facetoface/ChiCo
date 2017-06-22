@@ -26,16 +26,27 @@
     [self.view addSubview:scrollView];
     self.bodyView = scrollView;
     
-    NSUInteger testCount = 2;
-    for (NSUInteger index = 1; index <= testCount; index++) {
+    NSUInteger index = 1;
+    BOOL jump = YES;
+    do {
         rect.origin.x = SCREEN_WIDTH * (index-1);
         NSString *className = [NSString stringWithFormat:@"QKBezierView%d",(int)index];
         Class viewClass = NSClassFromString(className);
-        UIView *view = ((UIView *(*)(id, SEL, CGRect))objc_msgSend)([viewClass alloc], @selector(initWithFrame:), rect);
-        [scrollView addSubview:view];
-    }
+        if (viewClass) {
+            UIView *view = ((UIView *(*)(id, SEL, CGRect))objc_msgSend)([viewClass alloc], @selector(initWithFrame:), rect);
+            [scrollView addSubview:view];
+             index ++;
+        } else {
+            
+            jump = NO;
+        }
+       
+    } while (jump);
+    
 
-    [scrollView setContentSize:CGSizeMake(SCREEN_WIDTH*testCount, SCREEN_HEIGHT-64)];
+
+    [scrollView setContentSize:CGSizeMake(SCREEN_WIDTH*(index-1), SCREEN_HEIGHT-64)];
+    [scrollView  setContentOffset:CGPointMake(SCREEN_WIDTH*(index-2), 0)];
     [scrollView setPagingEnabled:YES];
     [scrollView setShowsVerticalScrollIndicator:NO];
     [scrollView setShowsHorizontalScrollIndicator:NO];

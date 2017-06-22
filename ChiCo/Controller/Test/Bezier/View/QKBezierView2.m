@@ -25,7 +25,7 @@
         [bodyView setFrame:bodyR];
         
         UIBezierPath *path = [UIBezierPath bezierPath];
-        [path moveToPoint:CGPointMake(-0, -15)];
+        [path moveToPoint:CGPointMake(0, -25)];
         [path addCurveToPoint:CGPointMake(-20, bodySize.height+10)
                 controlPoint1:CGPointMake(-5, bodySize.height/3)
                 controlPoint2:CGPointMake(0, 2*bodySize.height/3)];
@@ -33,7 +33,7 @@
         
         [path addLineToPoint:CGPointMake(bodySize.width, bodySize.height)];
         [path addLineToPoint:CGPointMake(bodySize.width, 0)];
-        [path addLineToPoint:CGPointMake(0, 0)];
+        [path addLineToPoint:CGPointMake(0, -25)];
         [path closePath];
         bodyView.layer.shadowPath =  path.CGPath;;
         
