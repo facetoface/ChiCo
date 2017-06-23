@@ -14,7 +14,37 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+       
         
+        CGSize size = frame.size;
+        CGSize bodySize = CGSizeMake(size.width-60, size.height-60);
+        CGRect bodyR;
+        bodyR.origin = CGPointMake(40, 20);
+        bodyR.size = bodySize;
+        UIView *bodyView = [[UIView alloc] init];
+        [self addSubview:bodyView];
+        [bodyView setFrame:bodyR];
+        
+        UIBezierPath *path = [UIBezierPath bezierPath];
+        [path moveToPoint:CGPointMake(-20, -15)];
+        [path addCurveToPoint:CGPointMake(-20, bodySize.height+10)
+                controlPoint1:CGPointMake(-5, bodySize.height/3)
+                controlPoint2:CGPointMake(0, 2*bodySize.height/3+10)];
+        
+        
+        [path addLineToPoint:CGPointMake(bodySize.width, bodySize.height)];
+        [path addLineToPoint:CGPointMake(bodySize.width, 0)];
+        [path addLineToPoint:CGPointMake(-20, -15)];
+        [path closePath];
+        bodyView.layer.shadowPath =  path.CGPath;;
+        
+        
+        [bodyView setBackgroundColor:[UIColor whiteColor]];
+        bodyView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+        bodyView.layer.shadowRadius = 1;
+        bodyView.layer.shadowOffset = CGSizeMake(0,0);
+        bodyView.layer.shadowOpacity = 0.8;
+
     }
     return self;
 }
