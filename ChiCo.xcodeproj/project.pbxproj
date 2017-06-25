@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1196E9EED9B521843A8539EC /* libPods-Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E08EEBCE71A6AB1505B630 /* libPods-Diary.a */; };
+		23385BF21EFCF1DA004E2151 /* QKBezierView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 23385BF11EFCF1DA004E2151 /* QKBezierView4.m */; };
 		2348A3031EEF75D20033D1BF /* QKStringScannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3021EEF75D20033D1BF /* QKStringScannerController.m */; };
 		2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3051EEF760D0033D1BF /* QKStringScanner.m */; };
 		2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */; };
@@ -100,6 +101,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23385BF01EFCF1DA004E2151 /* QKBezierView4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView4.h; sourceTree = "<group>"; };
+		23385BF11EFCF1DA004E2151 /* QKBezierView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView4.m; sourceTree = "<group>"; };
 		2348A3011EEF75D20033D1BF /* QKStringScannerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKStringScannerController.h; sourceTree = "<group>"; };
 		2348A3021EEF75D20033D1BF /* QKStringScannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKStringScannerController.m; sourceTree = "<group>"; };
 		2348A3041EEF760D0033D1BF /* QKStringScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKStringScanner.h; sourceTree = "<group>"; };
@@ -611,6 +614,8 @@
 				238CDEDA1EFB951C003C9917 /* QKBezierView2.m */,
 				238CDEDC1EFB9B96003C9917 /* QKBezierView3.h */,
 				238CDEDD1EFB9B96003C9917 /* QKBezierView3.m */,
+				23385BF01EFCF1DA004E2151 /* QKBezierView4.h */,
+				23385BF11EFCF1DA004E2151 /* QKBezierView4.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1451,6 +1456,7 @@
 				5EAE01171EDC1D33000830A9 /* QKHomeTabView.m in Sources */,
 				238CDEDE1EFB9B96003C9917 /* QKBezierView3.m in Sources */,
 				5EAE01151EDC1D33000830A9 /* QKHomeModel.m in Sources */,
+				23385BF21EFCF1DA004E2151 /* QKBezierView4.m in Sources */,
 				5EAD65891EE2582400C6D960 /* QKWebImageDownloader.m in Sources */,
 				5ECC597B1EDD235F0072D38C /* QKSwithParamController.m in Sources */,
 				5EEC1FE91ED181D80035EE07 /* main.m in Sources */,
