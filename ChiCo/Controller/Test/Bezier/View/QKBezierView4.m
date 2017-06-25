@@ -15,8 +15,8 @@
     self = [super initWithFrame:frame];
     if (self) {
       
-        CGPoint startP = CGPointMake(10, 10);
-        CGSize  bodyS = CGSizeMake(frame.size.width-60, frame.size.height-60);
+        CGPoint startP = CGPointMake(20, 10);
+        CGSize  bodyS = CGSizeMake(frame.size.width-40, frame.size.height-60);
         CGRect bodyR;
         bodyR.origin = startP;
         bodyR.size = bodyS;
@@ -43,7 +43,7 @@
         
         
         bodyView.layer.shadowPath = [path CGPath];
-        bodyView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+        bodyView.layer.shadowColor = [UIColor blackColor].CGColor;
         bodyView.layer.shadowRadius = 5;
         bodyView.layer.shadowOffset = CGSizeMake(0,0);
         bodyView.layer.shadowOpacity = 0.8;
