@@ -10,6 +10,7 @@
 		1196E9EED9B521843A8539EC /* libPods-Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E08EEBCE71A6AB1505B630 /* libPods-Diary.a */; };
 		23385BF21EFCF1DA004E2151 /* QKBezierView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 23385BF11EFCF1DA004E2151 /* QKBezierView4.m */; };
 		233BDDC01F00A2B0000552D9 /* QKBezierView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 233BDDBF1F00A2B0000552D9 /* QKBezierView5.m */; };
+		233BDDC31F00DBF7000552D9 /* QKBezierView6.m in Sources */ = {isa = PBXBuildFile; fileRef = 233BDDC21F00DBF7000552D9 /* QKBezierView6.m */; };
 		2348A3031EEF75D20033D1BF /* QKStringScannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3021EEF75D20033D1BF /* QKStringScannerController.m */; };
 		2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3051EEF760D0033D1BF /* QKStringScanner.m */; };
 		2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */; };
@@ -106,6 +107,8 @@
 		23385BF11EFCF1DA004E2151 /* QKBezierView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView4.m; sourceTree = "<group>"; };
 		233BDDBE1F00A2B0000552D9 /* QKBezierView5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView5.h; sourceTree = "<group>"; };
 		233BDDBF1F00A2B0000552D9 /* QKBezierView5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView5.m; sourceTree = "<group>"; };
+		233BDDC11F00DBF7000552D9 /* QKBezierView6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView6.h; sourceTree = "<group>"; };
+		233BDDC21F00DBF7000552D9 /* QKBezierView6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView6.m; sourceTree = "<group>"; };
 		2348A3011EEF75D20033D1BF /* QKStringScannerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKStringScannerController.h; sourceTree = "<group>"; };
 		2348A3021EEF75D20033D1BF /* QKStringScannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKStringScannerController.m; sourceTree = "<group>"; };
 		2348A3041EEF760D0033D1BF /* QKStringScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKStringScanner.h; sourceTree = "<group>"; };
@@ -621,6 +624,8 @@
 				23385BF11EFCF1DA004E2151 /* QKBezierView4.m */,
 				233BDDBE1F00A2B0000552D9 /* QKBezierView5.h */,
 				233BDDBF1F00A2B0000552D9 /* QKBezierView5.m */,
+				233BDDC11F00DBF7000552D9 /* QKBezierView6.h */,
+				233BDDC21F00DBF7000552D9 /* QKBezierView6.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1481,6 +1486,7 @@
 				5EAE012F1EDC1E05000830A9 /* QKTableBar.m in Sources */,
 				5EAE010A1EDC1CEA000830A9 /* QKMainTableBarController.m in Sources */,
 				2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */,
+				233BDDC31F00DBF7000552D9 /* QKBezierView6.m in Sources */,
 				5EAE012B1EDC1DC1000830A9 /* QKBaseNavController.m in Sources */,
 				5EAE01231EDC1D8F000830A9 /* QKMyCenterController.m in Sources */,
 				238CDED51EFB90A4003C9917 /* QKBeZierController.m in Sources */,
