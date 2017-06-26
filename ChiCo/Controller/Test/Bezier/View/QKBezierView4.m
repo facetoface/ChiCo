@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
       
-        CGPoint startP = CGPointMake(20, 10);
+        CGPoint startP = CGPointMake(20, 30);
         CGSize  bodyS = CGSizeMake(frame.size.width-40, frame.size.height-60);
         CGRect bodyR;
         bodyR.origin = startP;
@@ -23,14 +23,14 @@
         
         UIView *bodyView = [[UIView alloc] initWithFrame:bodyR];
         [self addSubview:bodyView];
-        [bodyView setBackgroundColor:[UIColor whiteColor]];
+        [bodyView setBackgroundColor:[UIColor lightTextColor]];
         
-        bodyR.origin.x = bodyR.origin.x + 2;
-        bodyR.origin.y = bodyR.origin.y + 2;
-        bodyR.size.width = bodyR.size.width - 4;
-        bodyR.size.height = bodyR.size.height - 4;
+        bodyR.origin.x = 5;
+        bodyR.origin.y =  5;
+        bodyR.size.width = bodyR.size.width - 10;
+        bodyR.size.height = bodyR.size.height - 10;
         UIView *contentView = [[UIView alloc] initWithFrame:bodyR];
-        [contentView setBackgroundColor:[UIColor redColor]];
+        [contentView setBackgroundColor:[UIColor whiteColor]];
         [bodyView addSubview:contentView];
         
         UIBezierPath *path = [UIBezierPath bezierPath];
