@@ -24,14 +24,14 @@
         
         UIView *bodyView = [[UIView alloc] initWithFrame:bodyR];
         [self addSubview:bodyView];
-        [bodyView setBackgroundColor:[UIColor lightTextColor]];
+        [bodyView setBackgroundColor:[UIColor greenColor]];
         
         bodyR.origin.x = 5;
         bodyR.origin.y =  5;
         bodyR.size.width = bodyR.size.width - 10;
         bodyR.size.height = bodyR.size.height - 10;
         UIView *contentView = [[UIView alloc] initWithFrame:bodyR];
-        [contentView setBackgroundColor:[UIColor whiteColor]];
+        [contentView setBackgroundColor:[UIColor redColor]];
         [bodyView addSubview:contentView];
         
         UIBezierPath *path = [UIBezierPath bezierPath];
@@ -50,7 +50,8 @@
         layer.shadowPath = [path CGPath];
         layer.shadowColor = [UIColor blackColor].CGColor;
         layer.shadowRadius = 3;
-        layer.shadowOpacity = 0.5;
+        layer.shadowOpacity = 0.2;
+        layer.backgroundColor = [UIColor greenColor].CGColor;
         [bodyView.layer addSublayer:layer];
       
     }
