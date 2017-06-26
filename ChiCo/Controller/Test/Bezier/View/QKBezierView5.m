@@ -16,6 +16,7 @@
     if (self) {
         
         [self setBackgroundColor:[UIColor lightGrayColor]];
+        [self setClipsToBounds:YES];
         
         CALayer *layer1 = [CALayer layer];
         [layer1 setFrame:CGRectMake(10, 10, 50, 50)];
@@ -30,9 +31,8 @@
         emitterLayer.emitterShape = kCAEmitterLayerPoint;
        
         CAEmitterCell *cell = [CAEmitterCell emitterCell];
-        [cell setBirthRate:3];
-        [cell setContentsRect:CGRectMake(0, 0, 20, 20)];
-        cell.emissionLatitude = M_PI_2+M_PI;
+        [cell setBirthRate:30];
+        cell.emissionLatitude = M_PI_2 + M_PI;
         cell.emissionRange = M_PI_2;
 
         cell.contents = CFBridgingRelease([UIImage imageNamed:@"fish_highlight"].CGImage);
