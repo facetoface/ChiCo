@@ -15,6 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
       
+
         CGPoint startP = CGPointMake(20, 30);
         CGSize  bodyS = CGSizeMake(frame.size.width-40, frame.size.height-60);
         CGRect bodyR;
@@ -45,12 +46,12 @@
         [path addLineToPoint:CGPointMake(bodyS.width, 0)];
         [path addLineToPoint:CGPointMake(0, 0)];
         
-        
-        bodyView.layer.shadowPath = [path CGPath];
-        bodyView.layer.shadowColor = [UIColor blackColor].CGColor;
-        bodyView.layer.shadowRadius = 3;
-        bodyView.layer.shadowOffset = CGSizeMake(-10,0);
-        bodyView.layer.shadowOpacity = 0.5;
+        CALayer *layer = [CALayer layer];
+        layer.shadowPath = [path CGPath];
+        layer.shadowColor = [UIColor blackColor].CGColor;
+        layer.shadowRadius = 3;
+        layer.shadowOpacity = 0.5;
+        [bodyView.layer addSublayer:layer];
       
     }
     return self;
