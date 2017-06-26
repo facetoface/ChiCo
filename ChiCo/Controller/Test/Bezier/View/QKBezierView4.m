@@ -34,9 +34,13 @@
         [bodyView addSubview:contentView];
         
         UIBezierPath *path = [UIBezierPath bezierPath];
-        [path moveToPoint:CGPointMake(0, 0)];
+        [path moveToPoint:CGPointMake(-10, 0)];
+        [path addQuadCurveToPoint:CGPointMake(20, bodyS.height/2)
+                     controlPoint:CGPointMake(10, bodyS.height/5)];
+          [path addLineToPoint:CGPointMake(-2, bodyS.height/2)];
         [path addQuadCurveToPoint:CGPointMake(0, bodyS.height)
-                     controlPoint:CGPointMake(-5, bodyS.height/2)];
+                     controlPoint:CGPointMake(10, bodyS.height/3)];
+        [path addLineToPoint:CGPointMake(-2, bodyS.height)];
         [path addLineToPoint:CGPointMake(bodyS.width, bodyS.height)];
         [path addLineToPoint:CGPointMake(bodyS.width, 0)];
         [path addLineToPoint:CGPointMake(0, 0)];
@@ -44,9 +48,9 @@
         
         bodyView.layer.shadowPath = [path CGPath];
         bodyView.layer.shadowColor = [UIColor blackColor].CGColor;
-        bodyView.layer.shadowRadius = 5;
-        bodyView.layer.shadowOffset = CGSizeMake(0,0);
-        bodyView.layer.shadowOpacity = 0.8;
+        bodyView.layer.shadowRadius = 3;
+        bodyView.layer.shadowOffset = CGSizeMake(-10,0);
+        bodyView.layer.shadowOpacity = 0.5;
       
     }
     return self;
