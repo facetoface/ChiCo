@@ -7,6 +7,7 @@
 //
 
 #import "QKBezierView1.h"
+#import "QKReasouce.h"
 
 @implementation QKBezierView1
 
@@ -15,6 +16,8 @@
     self = [super initWithFrame:frame];
     if (self) {
      
+      
+        
         CGSize size = frame.size;
         CGSize bodySize = CGSizeMake(size.width-60, size.height-60);
         CGRect bodyR;

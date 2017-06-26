@@ -23,6 +23,8 @@
         CGContextAddArc(contextRef, 100, 20, 15, 0, 2*M_PI, 0);
         [layer1 drawInContext:contextRef];
         
+        [self drawRect:CGRectZero];
+        
     }
     return self;
 }
