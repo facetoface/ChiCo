@@ -15,18 +15,14 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        CALayer *layer1 = [CALayer layer];
-        [self.layer addSublayer:layer1];
-        
-        CGContextRef contextRef = UIGraphicsGetCurrentContext();
-        CGContextSetRGBFillColor (contextRef,  1, 0, 0, 1.0);
-        CGContextAddArc(contextRef, 100, 20, 15, 0, 2*M_PI, 0);
-        [layer1 drawInContext:contextRef];
-        
-        [self drawRect:CGRectZero];
-        
+        [self setBackgroundColor:[UIColor whiteColor]];
     }
     return self;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    
 }
 
 @end

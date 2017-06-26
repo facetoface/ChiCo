@@ -29,7 +29,7 @@
         [emitterLayer setBackgroundColor:[UIColor lightTextColor].CGColor];
         [self.layer addSublayer:emitterLayer];
         emitterLayer.emitterShape = kCAEmitterLayerPoint;
-       
+        emitterLayer.position = CGPointMake(200, 200);
         CAEmitterCell *cell = [CAEmitterCell emitterCell];
         [cell setBirthRate:30];
         cell.emissionLatitude = M_PI_2 + M_PI;
