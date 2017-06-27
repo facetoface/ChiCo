@@ -14,6 +14,14 @@
 
 @implementation QKView6Layer
 
+
+/**********************************************
+ 绘画步骤
+ 1.设置线宽 线颜色 填充色
+ 2.设置路径
+ 3.画到画板上，结束本次设置。
+ 4.CGContextFillPath和GContextStrokePath属于结束语句
+ **********************************************/
 - (void)drawInContext:(CGContextRef)ctx
 {
     
@@ -21,7 +29,6 @@
     CGContextSetRGBStrokeColor(ctx, 1.0, 0, 0, 1.0);
    //设置填充颜色
    CGContextSetRGBFillColor(ctx, 0.5, 1.0, 0.5, 1.0);
-
     //画线的宽度
     CGContextSetLineWidth(ctx, 0.5);
     /**********************************
@@ -56,17 +63,21 @@
     CGContextAddArcToPoint(ctx, 180, 200, 180, 280-70, 10); // 右上角
     CGContextStrokePath(ctx);
     
-//    CGFloat arcLenth = 10;
-//    CGFloat arcRadio = 60;
-//    //从左上角开始
-//    CGContextMoveToPoint(ctx, 120+arcRadio, 120);
-//    //画右上角的拐角
-//    CGContextAddArcToPoint(ctx, 180, 120, 180, 120+arcLenth, arcRadio);
-//    CGContextAddArcToPoint(ctx, 180, 180, 180-arcLenth, 180, arcRadio);
-//    CGContextAddArcToPoint(ctx, 120, 180, 120, 180-arcLenth, arcRadio);
-//    CGContextAddArcToPoint(ctx, 120, 120, 180, 120, arcRadio);
-//    CGContextFillPath(ctx);
-//    CGContextClosePath(ctx);
+    CGFloat arcLenth = 10;
+    CGFloat arcRadio = 10;
+    CGPoint startPoint = CGPointMake(250, 10);
+    
+    //从左上角开始
+    CGContextMoveToPoint(ctx, startPoint.x+arcRadio, startPoint.y);
+    CGFloat arcWH = 60;
+    
+    //画右上角的拐角
+    CGContextAddArcToPoint(ctx, startPoint.x+arcWH, startPoint.y, startPoint.x+arcWH, startPoint.y+arcLenth, arcRadio);
+    CGContextAddArcToPoint(ctx, startPoint.x+arcWH, 70, startPoint.x+arcWH-arcLenth, 70, arcRadio);
+    CGContextAddArcToPoint(ctx, startPoint.x, 70, startPoint.x, 70-arcLenth, arcRadio);
+    CGContextAddArcToPoint(ctx, startPoint.x, 10, startPoint.x+arcLenth, 10, arcRadio);
+    CGContextFillPath(ctx);
+    CGContextClosePath(ctx);
     
 
     CGContextAddArc(ctx, 150, 40, 30, 0, 2*M_PI, 0);
