@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1196E9EED9B521843A8539EC /* libPods-Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E08EEBCE71A6AB1505B630 /* libPods-Diary.a */; };
 		232C62511F0B617A001B7D4C /* QKBezierView7.m in Sources */ = {isa = PBXBuildFile; fileRef = 232C62501F0B617A001B7D4C /* QKBezierView7.m */; };
+		233142991F0DD6C9006A34FE /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233142981F0DD6C9006A34FE /* AnimationController.m */; };
 		23385BF21EFCF1DA004E2151 /* QKBezierView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 23385BF11EFCF1DA004E2151 /* QKBezierView4.m */; };
 		233BDDC01F00A2B0000552D9 /* QKBezierView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 233BDDBF1F00A2B0000552D9 /* QKBezierView5.m */; };
 		233BDDC31F00DBF7000552D9 /* QKBezierView6.m in Sources */ = {isa = PBXBuildFile; fileRef = 233BDDC21F00DBF7000552D9 /* QKBezierView6.m */; };
@@ -107,6 +108,8 @@
 /* Begin PBXFileReference section */
 		232C624F1F0B617A001B7D4C /* QKBezierView7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView7.h; sourceTree = "<group>"; };
 		232C62501F0B617A001B7D4C /* QKBezierView7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView7.m; sourceTree = "<group>"; };
+		233142971F0DD6C9006A34FE /* AnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationController.h; sourceTree = "<group>"; };
+		233142981F0DD6C9006A34FE /* AnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationController.m; sourceTree = "<group>"; };
 		23385BF01EFCF1DA004E2151 /* QKBezierView4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView4.h; sourceTree = "<group>"; };
 		23385BF11EFCF1DA004E2151 /* QKBezierView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView4.m; sourceTree = "<group>"; };
 		233BDDBE1F00A2B0000552D9 /* QKBezierView5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView5.h; sourceTree = "<group>"; };
@@ -272,6 +275,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233142961F0DD6AD006A34FE /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				233142971F0DD6C9006A34FE /* AnimationController.h */,
+				233142981F0DD6C9006A34FE /* AnimationController.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		2348A2FD1EEF75A10033D1BF /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -812,6 +824,7 @@
 		5E6FF5821ED9C01F007331F6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				233142961F0DD6AD006A34FE /* Animation */,
 				238CDECF1EFB9071003C9917 /* Bezier */,
 				2348A2FD1EEF75A10033D1BF /* Scanner */,
 				2364E92E1EE13DC300C5D74C /* Block */,
@@ -1469,6 +1482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2364E9371EE13E5800C5D74C /* QKBlockOne.m in Sources */,
+				233142991F0DD6C9006A34FE /* AnimationController.m in Sources */,
 				238CDEDB1EFB951C003C9917 /* QKBezierView2.m in Sources */,
 				5EAE01161EDC1D33000830A9 /* QKHomeNavBar.m in Sources */,
 				2364E92D1EE0E96500C5D74C /* QKDownLoadImageController.m in Sources */,

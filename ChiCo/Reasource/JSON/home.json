@@ -23,4 +23,10 @@
  "push_param" : {},
  "push_type" : "1"
  },
+ {
+ "identifer" : "AnimationController",
+ "title" : "动画",
+ "push_param" : {},
+ "push_type" : "1"
+ },
 ]
