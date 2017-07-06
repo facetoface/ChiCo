@@ -67,7 +67,6 @@
     CGContextAddArcToPoint(ctx, startPoint.x, 70, startPoint.x, 70-arcLenth, arcRadio);
     CGContextAddArcToPoint(ctx, startPoint.x, 10, startPoint.x+arcLenth, 10, arcRadio);
     CGContextFillPath(ctx);
-    CGContextClosePath(ctx);
     
 
     //画个4叶草

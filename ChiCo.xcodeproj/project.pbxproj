@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1196E9EED9B521843A8539EC /* libPods-Diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E08EEBCE71A6AB1505B630 /* libPods-Diary.a */; };
+		232C62511F0B617A001B7D4C /* QKBezierView7.m in Sources */ = {isa = PBXBuildFile; fileRef = 232C62501F0B617A001B7D4C /* QKBezierView7.m */; };
 		23385BF21EFCF1DA004E2151 /* QKBezierView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 23385BF11EFCF1DA004E2151 /* QKBezierView4.m */; };
 		233BDDC01F00A2B0000552D9 /* QKBezierView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 233BDDBF1F00A2B0000552D9 /* QKBezierView5.m */; };
 		233BDDC31F00DBF7000552D9 /* QKBezierView6.m in Sources */ = {isa = PBXBuildFile; fileRef = 233BDDC21F00DBF7000552D9 /* QKBezierView6.m */; };
@@ -104,6 +105,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		232C624F1F0B617A001B7D4C /* QKBezierView7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView7.h; sourceTree = "<group>"; };
+		232C62501F0B617A001B7D4C /* QKBezierView7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView7.m; sourceTree = "<group>"; };
 		23385BF01EFCF1DA004E2151 /* QKBezierView4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView4.h; sourceTree = "<group>"; };
 		23385BF11EFCF1DA004E2151 /* QKBezierView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKBezierView4.m; sourceTree = "<group>"; };
 		233BDDBE1F00A2B0000552D9 /* QKBezierView5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBezierView5.h; sourceTree = "<group>"; };
@@ -628,6 +631,8 @@
 				233BDDBF1F00A2B0000552D9 /* QKBezierView5.m */,
 				233BDDC11F00DBF7000552D9 /* QKBezierView6.h */,
 				233BDDC21F00DBF7000552D9 /* QKBezierView6.m */,
+				232C624F1F0B617A001B7D4C /* QKBezierView7.h */,
+				232C62501F0B617A001B7D4C /* QKBezierView7.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1488,6 +1493,7 @@
 				5EAE01141EDC1D33000830A9 /* HomeController.m in Sources */,
 				2348A3031EEF75D20033D1BF /* QKStringScannerController.m in Sources */,
 				5EAE012F1EDC1E05000830A9 /* QKTableBar.m in Sources */,
+				232C62511F0B617A001B7D4C /* QKBezierView7.m in Sources */,
 				5EAE010A1EDC1CEA000830A9 /* QKMainTableBarController.m in Sources */,
 				2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */,
 				233BDDC31F00DBF7000552D9 /* QKBezierView6.m in Sources */,
