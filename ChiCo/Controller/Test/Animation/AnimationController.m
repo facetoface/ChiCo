@@ -7,6 +7,7 @@
 //
 
 #import "AnimationController.h"
+#import "QKViewTest.h"
 
 @interface AnimationController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    QKViewTest *view = [[QKViewTest alloc] initWithFrame:CGRectMake(20, 20, 100, 100)];
+    [self.view addSubview:view];
+    
     // Do any additional setup after loading the view.
 }
 

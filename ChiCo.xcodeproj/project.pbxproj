@@ -17,6 +17,8 @@
 		2348A3031EEF75D20033D1BF /* QKStringScannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3021EEF75D20033D1BF /* QKStringScannerController.m */; };
 		2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A3051EEF760D0033D1BF /* QKStringScanner.m */; };
 		2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */; };
+		234B8D111F177A2C00E6B93F /* QKViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B8D101F177A2C00E6B93F /* QKViewTest.m */; };
+		234B8D131F177A3F00E6B93F /* QKViewTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234B8D121F177A3F00E6B93F /* QKViewTest.xib */; };
 		2364E92D1EE0E96500C5D74C /* QKDownLoadImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */; };
 		2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9331EE13E0C00C5D74C /* QKBlockController.m */; };
 		2364E9371EE13E5800C5D74C /* QKBlockOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9361EE13E5800C5D74C /* QKBlockOne.m */; };
@@ -123,6 +125,9 @@
 		2348A3051EEF760D0033D1BF /* QKStringScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKStringScanner.m; sourceTree = "<group>"; };
 		2348A30C1EEF7A940033D1BF /* QKEasyTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKEasyTestView.h; sourceTree = "<group>"; };
 		2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKEasyTestView.m; sourceTree = "<group>"; };
+		234B8D0F1F177A2C00E6B93F /* QKViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKViewTest.h; sourceTree = "<group>"; };
+		234B8D101F177A2C00E6B93F /* QKViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKViewTest.m; sourceTree = "<group>"; };
+		234B8D121F177A3F00E6B93F /* QKViewTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKViewTest.xib; sourceTree = "<group>"; };
 		2364E92B1EE0E96500C5D74C /* QKDownLoadImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKDownLoadImageController.h; sourceTree = "<group>"; };
 		2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKDownLoadImageController.m; sourceTree = "<group>"; };
 		2364E9321EE13E0C00C5D74C /* QKBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBlockController.h; sourceTree = "<group>"; };
@@ -280,6 +285,9 @@
 			children = (
 				233142971F0DD6C9006A34FE /* AnimationController.h */,
 				233142981F0DD6C9006A34FE /* AnimationController.m */,
+				234B8D0F1F177A2C00E6B93F /* QKViewTest.h */,
+				234B8D101F177A2C00E6B93F /* QKViewTest.m */,
+				234B8D121F177A3F00E6B93F /* QKViewTest.xib */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -1219,6 +1227,7 @@
 			files = (
 				233BDDC71F01020F000552D9 /* emjo.json in Resources */,
 				5EEC1FDD1ED181C20035EE07 /* Info.plist in Resources */,
+				234B8D131F177A3F00E6B93F /* QKViewTest.xib in Resources */,
 				5EEC1FD41ED181C20035EE07 /* Assets.xcassets in Resources */,
 				5EAE013B1EDC215D000830A9 /* home.json in Resources */,
 				5EEC1FD71ED181C20035EE07 /* LaunchScreen.storyboard in Resources */,
@@ -1499,6 +1508,7 @@
 				5EAE01271EDC1DA6000830A9 /* QKTabFirstBaseController.m in Sources */,
 				2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */,
 				5EEC1FE61ED181D80035EE07 /* AppDelegate.m in Sources */,
+				234B8D111F177A2C00E6B93F /* QKViewTest.m in Sources */,
 				2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */,
 				238CDED81EFB9172003C9917 /* QKBezierView1.m in Sources */,
 				233BDDC01F00A2B0000552D9 /* QKBezierView5.m in Sources */,
