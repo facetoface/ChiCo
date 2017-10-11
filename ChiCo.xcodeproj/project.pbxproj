@@ -19,6 +19,7 @@
 		2348A30E1EEF7A940033D1BF /* QKEasyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */; };
 		234B8D111F177A2C00E6B93F /* QKViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B8D101F177A2C00E6B93F /* QKViewTest.m */; };
 		234B8D131F177A3F00E6B93F /* QKViewTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234B8D121F177A3F00E6B93F /* QKViewTest.xib */; };
+		2355D2D21F8DF83B008AC8BA /* RunTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2355D2D11F8DF83B008AC8BA /* RunTimeController.m */; };
 		2364E92D1EE0E96500C5D74C /* QKDownLoadImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */; };
 		2364E9341EE13E0C00C5D74C /* QKBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9331EE13E0C00C5D74C /* QKBlockController.m */; };
 		2364E9371EE13E5800C5D74C /* QKBlockOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364E9361EE13E5800C5D74C /* QKBlockOne.m */; };
@@ -128,6 +129,8 @@
 		234B8D0F1F177A2C00E6B93F /* QKViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKViewTest.h; sourceTree = "<group>"; };
 		234B8D101F177A2C00E6B93F /* QKViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKViewTest.m; sourceTree = "<group>"; };
 		234B8D121F177A3F00E6B93F /* QKViewTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKViewTest.xib; sourceTree = "<group>"; };
+		2355D2D01F8DF83B008AC8BA /* RunTimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeController.h; sourceTree = "<group>"; };
+		2355D2D11F8DF83B008AC8BA /* RunTimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeController.m; sourceTree = "<group>"; };
 		2364E92B1EE0E96500C5D74C /* QKDownLoadImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKDownLoadImageController.h; sourceTree = "<group>"; };
 		2364E92C1EE0E96500C5D74C /* QKDownLoadImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKDownLoadImageController.m; sourceTree = "<group>"; };
 		2364E9321EE13E0C00C5D74C /* QKBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKBlockController.h; sourceTree = "<group>"; };
@@ -334,6 +337,15 @@
 				2348A30D1EEF7A940033D1BF /* QKEasyTestView.m */,
 			);
 			path = EasyTest;
+			sourceTree = "<group>";
+		};
+		2355D2CF1F8DF821008AC8BA /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				2355D2D01F8DF83B008AC8BA /* RunTimeController.h */,
+				2355D2D11F8DF83B008AC8BA /* RunTimeController.m */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 		2364E9271EE0E94000C5D74C /* DownLoadImage */ = {
@@ -713,7 +725,6 @@
 			children = (
 				5E6FF57B1ED9BF32007331F6 /* QKLibray */,
 				5E6FF57A1ED9BF27007331F6 /* Controller */,
-				5E6FF5791ED9BF21007331F6 /* Word */,
 				5EEC1FE01ED181D80035EE07 /* Start */,
 				5EEC1FCD1ED181C20035EE07 /* Reasource */,
 				5E6799F81ECFEF7C00844946 /* Supporting Files */,
@@ -756,17 +767,9 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		5E6FF5791ED9BF21007331F6 /* Word */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Word;
-			sourceTree = "<group>";
-		};
 		5E6FF57A1ED9BF27007331F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5E6FF5811ED9C01F007331F6 /* Base */,
 				5E6FF5821ED9C01F007331F6 /* Test */,
 			);
 			path = Controller;
@@ -775,11 +778,8 @@
 		5E6FF57B1ED9BF32007331F6 /* QKLibray */ = {
 			isa = PBXGroup;
 			children = (
-				5E6FF5801ED9BFF6007331F6 /* Net */,
 				5E6FF57C1ED9BFC8007331F6 /* Data */,
-				5E6FF57D1ED9BFC8007331F6 /* Image */,
 				5E6FF57E1ED9BFC8007331F6 /* UI */,
-				5E6FF57F1ED9BFC8007331F6 /* Vido */,
 			);
 			path = QKLibray;
 			sourceTree = "<group>";
@@ -792,13 +792,6 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		5E6FF57D1ED9BFC8007331F6 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Image;
-			sourceTree = "<group>";
-		};
 		5E6FF57E1ED9BFC8007331F6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -808,30 +801,10 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		5E6FF57F1ED9BFC8007331F6 /* Vido */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vido;
-			sourceTree = "<group>";
-		};
-		5E6FF5801ED9BFF6007331F6 /* Net */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Net;
-			sourceTree = "<group>";
-		};
-		5E6FF5811ED9C01F007331F6 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		5E6FF5821ED9C01F007331F6 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				2355D2CF1F8DF821008AC8BA /* Runtime */,
 				233142961F0DD6AD006A34FE /* Animation */,
 				238CDECF1EFB9071003C9917 /* Bezier */,
 				2348A2FD1EEF75A10033D1BF /* Scanner */,
@@ -1517,6 +1490,7 @@
 				5EAE01141EDC1D33000830A9 /* HomeController.m in Sources */,
 				2348A3031EEF75D20033D1BF /* QKStringScannerController.m in Sources */,
 				5EAE012F1EDC1E05000830A9 /* QKTableBar.m in Sources */,
+				2355D2D21F8DF83B008AC8BA /* RunTimeController.m in Sources */,
 				232C62511F0B617A001B7D4C /* QKBezierView7.m in Sources */,
 				5EAE010A1EDC1CEA000830A9 /* QKMainTableBarController.m in Sources */,
 				2348A3061EEF760D0033D1BF /* QKStringScanner.m in Sources */,
